@@ -180,6 +180,7 @@ public class JapaneseSoftwareKeyboardModel {
       int inputType, KeyboardLayout layout) {
     if (MozcUtil.isNumberKeyboardPreferred(inputType)) {
       switch (Preconditions.checkNotNull(layout)) {
+        case JIS:
         case GODAN:
         case QWERTY:
         case TWELVE_KEYS:
@@ -218,6 +219,8 @@ public class JapaneseSoftwareKeyboardModel {
       boolean qwertyLayoutForAlphabet) {
     try {
       switch (keyboardLayout) {
+        case JIS:
+          return getJisKeyboardSpecification(keyboardMode);
         case TWELVE_KEYS:
           return getTwelveKeysKeyboardSpecification(
               keyboardMode, inputStyle, qwertyLayoutForAlphabet);
@@ -275,6 +278,17 @@ public class JapaneseSoftwareKeyboardModel {
     throw new IllegalArgumentException(
         "Unknown keyboard state: "
             + keyboardMode + ", " + inputStyle + ", " + qwertyLayoutForAlphabet);
+  }
+
+  private static KeyboardSpecification getJisKeyboardSpecification(KeyboardMode keyboardMode) {
+    switch (keyboardMode) {
+      case KANA: return KeyboardSpecification.JIS_KANA;
+      case ALPHABET: return KeyboardSpecification.QWERTY_ALPHABET;
+      case ALPHABET_NUMBER: return KeyboardSpecification.QWERTY_ALPHABET_NUMBER;
+      case NUMBER: return KeyboardSpecification.NUMBER;
+      case SYMBOL_NUMBER: return KeyboardSpecification.SYMBOL_NUMBER;
+    }
+    throw new IllegalArgumentException("Unknown keyboard mode: " + keyboardMode);
   }
 
   private static KeyboardSpecification getQwertyKeyboardSpecification(KeyboardMode keyboardMode) {

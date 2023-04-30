@@ -183,6 +183,11 @@ public class KeyboardLayoutPreference extends Preference {
           R.string.pref_keyboard_layout_title_12keys,
           R.string.pref_keyboard_layout_description_12keys),
       new Item(
+          KeyboardLayout.JIS,
+          KeyboardSpecification.JIS_KANA,
+          R.string.pref_keyboard_layout_title_jis,
+          R.string.pref_keyboard_layout_description_jis),
+      new Item(
           KeyboardLayout.QWERTY,
           KeyboardSpecification.QWERTY_KANA,
           R.string.pref_keyboard_layout_title_qwerty,

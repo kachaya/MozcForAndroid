@@ -60,6 +60,7 @@ public class ClientSidePreference {
     TWELVE_KEYS(1),
     QWERTY(2),
     GODAN(3),
+    JIS(4),
     ;
 
     // ID for usage stats.

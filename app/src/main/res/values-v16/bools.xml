@@ -31,6 +31,6 @@
 -->
 <resources>
 
-    <bool name="enable_user_dictionary_export">true</bool>
+    <bool name="enable_user_dictionary_export">false</bool>
 
 </resources>

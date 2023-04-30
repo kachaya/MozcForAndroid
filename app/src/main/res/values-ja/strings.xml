@@ -96,9 +96,11 @@
         <string name="pref_popup_feedback_description">キー押下時にポップアップを表示します。</string>
         <string name="pref_keyboard_layout_description">キーボードレイアウトを切り替えます。</string>
             <string name="pref_keyboard_layout_title_12keys">ケータイ配列</string>
+            <string name="pref_keyboard_layout_title_jis">JISかな</string>
             <string name="pref_keyboard_layout_title_qwerty">QWERTY</string>
             <string name="pref_keyboard_layout_title_godan">Godan キーボード</string>
             <string name="pref_keyboard_layout_description_12keys">携帯電話のキーボードのようなレイアウトです。</string>
+            <string name="pref_keyboard_layout_description_jis">パソコンのJISかな配列のようなレイアウトです。</string>
             <string name="pref_keyboard_layout_description_qwerty">パソコンのキーボードのようなレイアウトです。</string>
             <string name="pref_keyboard_layout_description_godan">ローマ字入力に特化したレイアウトです。 <![CDATA[<a href=\'http://support.google.com/ime/japanese/bin/answer.py?hl=ja&topic=25606&answer=2700298\'>使い方</a>]]></string>
         <string name="pref_input_style_setting_description">ケータイ配列での入力方法を切り替えます。</string>

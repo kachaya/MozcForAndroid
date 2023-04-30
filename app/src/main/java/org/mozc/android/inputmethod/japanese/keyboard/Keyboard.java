@@ -57,6 +57,17 @@ public class Keyboard {
    * For example, some keyboards use a special Romanji table.
    */
   public static enum KeyboardSpecification {
+    // JIS keyboard.
+    JIS_KANA(
+        new KeyboardSpecificationName("JIS_KANA", 0, 1, 0),
+        R.xml.kbd_jis_kana,
+        false,
+        CompositionMode.HIRAGANA,
+        SpecialRomanjiTable.DEFAULT_TABLE,
+        SpaceOnAlphanumeric.SPACE_OR_CONVERT_KEEPING_COMPOSITION,
+        true,
+        CrossingEdgeBehavior.DO_NOTHING),
+
     // 12 keys.
     TWELVE_KEY_TOGGLE_KANA(
         new KeyboardSpecificationName("TWELVE_KEY_TOGGLE_KANA", 0, 2, 0),
@@ -132,7 +143,7 @@ public class Keyboard {
     // QWERTY keyboard.
     QWERTY_KANA(
         new KeyboardSpecificationName("QWERTY_KANA", 0, 4, 0),
-        R.xml.kbd_qwerty_kana,
+        R.xml.kbd_jis_romaji,
         false,
         CompositionMode.HIRAGANA,
         SpecialRomanjiTable.QWERTY_MOBILE_TO_HIRAGANA,
@@ -142,7 +153,7 @@ public class Keyboard {
 
     QWERTY_ALPHABET(
         new KeyboardSpecificationName("QWERTY_ALPHABET", 0, 5, 0),
-        R.xml.kbd_qwerty_abc,
+        R.xml.kbd_jis_abc,
         false,
         CompositionMode.HALF_ASCII,
         SpecialRomanjiTable.QWERTY_MOBILE_TO_HALFWIDTHASCII,

@@ -157,6 +157,7 @@
     <string name="cd_key_uchar_vertical_line">vertical line</string>
     <string name="cd_key_uchar_right_curly_bracket">right curly bracket</string>
     <string name="cd_key_uchar_tilde">tilde</string>
+    <string name="cd_key_uchar_yen_sign">yen sign</string>
     <string name="cd_key_action_done">done</string>
     <string name="cd_key_action_go">go</string>
     <string name="cd_key_action_next">next</string>

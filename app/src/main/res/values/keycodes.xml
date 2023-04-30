@@ -158,4 +158,5 @@
   <integer name="uchar_vertical_line">124</integer>  <!-- | -->
   <integer name="uchar_right_curly_bracket">125</integer>  <!-- } -->
   <integer name="uchar_tilde">126</integer>  <!-- ~ -->
+  <integer name="uchar_yen_sign">165</integer>  <!-- ¥ -->
 </resources>
