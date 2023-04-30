@@ -54,7 +54,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_digit_one"
-                        mozc:keyIcon="@raw/jis__keyicon__digit_one"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_digit_one"
                         mozc:sourceId="49" />
                 </Flick>
             </KeyState>
@@ -64,7 +64,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_exclamation_mark"
-                        mozc:keyIcon="@raw/jis__keyicon__exclamation_mark"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_exclamation_mark"
                         mozc:sourceId="33" />
                 </Flick>
             </KeyState>
@@ -74,7 +74,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_digit_two"
-                        mozc:keyIcon="@raw/jis__keyicon__digit_two"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_digit_two"
                         mozc:sourceId="50" />
                 </Flick>
             </KeyState>
@@ -84,7 +84,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_quotation_mark"
-                        mozc:keyIcon="@raw/jis__keyicon__quotation_mark"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_quotation_mark"
                         mozc:sourceId="34" />
                 </Flick>
             </KeyState>
@@ -94,7 +94,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_digit_three"
-                        mozc:keyIcon="@raw/jis__keyicon__digit_three"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_digit_three"
                         mozc:sourceId="51" />
                 </Flick>
             </KeyState>
@@ -104,7 +104,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_number_sign"
-                        mozc:keyIcon="@raw/jis__keyicon__number_sign"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_number_sign"
                         mozc:sourceId="35" />
                 </Flick>
             </KeyState>
@@ -114,7 +114,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_digit_four"
-                        mozc:keyIcon="@raw/jis__keyicon__digit_four"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_digit_four"
                         mozc:sourceId="52" />
                 </Flick>
             </KeyState>
@@ -124,7 +124,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_dollar_sign"
-                        mozc:keyIcon="@raw/jis__keyicon__dollar_sign"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_dollar_sign"
                         mozc:sourceId="36" />
                 </Flick>
             </KeyState>
@@ -134,7 +134,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_digit_five"
-                        mozc:keyIcon="@raw/jis__keyicon__digit_five"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_digit_five"
                         mozc:sourceId="53" />
                 </Flick>
             </KeyState>
@@ -144,7 +144,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_percent_sign"
-                        mozc:keyIcon="@raw/jis__keyicon__percent_sign"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_percent_sign"
                         mozc:sourceId="37" />
                 </Flick>
             </KeyState>
@@ -154,7 +154,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_digit_six"
-                        mozc:keyIcon="@raw/jis__keyicon__digit_six"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_digit_six"
                         mozc:sourceId="54" />
                 </Flick>
             </KeyState>
@@ -164,7 +164,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_ampersand"
-                        mozc:keyIcon="@raw/jis__keyicon__ampersand"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_ampersand"
                         mozc:sourceId="38" />
                 </Flick>
             </KeyState>
@@ -174,7 +174,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_digit_seven"
-                        mozc:keyIcon="@raw/jis__keyicon__digit_seven"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_digit_seven"
                         mozc:sourceId="55" />
                 </Flick>
             </KeyState>
@@ -184,7 +184,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_apostrophe"
-                        mozc:keyIcon="@raw/jis__keyicon__apostrophe"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_apostrophe"
                         mozc:sourceId="39" />
                 </Flick>
             </KeyState>
@@ -194,7 +194,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_digit_eight"
-                        mozc:keyIcon="@raw/jis__keyicon__digit_eight"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_digit_eight"
                         mozc:sourceId="56" />
                 </Flick>
             </KeyState>
@@ -204,7 +204,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_left_parenthesis"
-                        mozc:keyIcon="@raw/jis__keyicon__left_parenthesis"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_left_parenthesis"
                         mozc:sourceId="40" />
                 </Flick>
             </KeyState>
@@ -214,7 +214,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_digit_nine"
-                        mozc:keyIcon="@raw/jis__keyicon__digit_nine"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_digit_nine"
                         mozc:sourceId="57" />
                 </Flick>
             </KeyState>
@@ -224,7 +224,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_right_parenthesis"
-                        mozc:keyIcon="@raw/jis__keyicon__right_parenthesis"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_right_parenthesis"
                         mozc:sourceId="41" />
                 </Flick>
             </KeyState>
@@ -234,7 +234,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_digit_zero"
-                        mozc:keyIcon="@raw/jis__keyicon__digit_zero"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_digit_zero"
                         mozc:sourceId="48" />
                 </Flick>
             </KeyState>
@@ -251,7 +251,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_hyphen_minus"
-                        mozc:keyIcon="@raw/jis__keyicon__hyphen_minus"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_hyphen_minus"
                         mozc:sourceId="45" />
                 </Flick>
             </KeyState>
@@ -261,7 +261,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_equals_sign"
-                        mozc:keyIcon="@raw/jis__keyicon__equals_sign"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_equals_sign"
                         mozc:sourceId="61" />
                 </Flick>
             </KeyState>
@@ -271,7 +271,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_circumflex_accent"
-                        mozc:keyIcon="@raw/jis__keyicon__circumflex_accent"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_circumflex_accent"
                         mozc:sourceId="94" />
                 </Flick>
             </KeyState>
@@ -281,7 +281,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_tilde"
-                        mozc:keyIcon="@raw/jis__keyicon__tilde"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_tilde"
                         mozc:sourceId="126" />
                 </Flick>
             </KeyState>
@@ -293,7 +293,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_q"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_q"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_q"
                         mozc:sourceId="113" />
                 </Flick>
             </KeyState>
@@ -303,7 +303,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_q"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_q"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_q"
                         mozc:sourceId="81" />
                 </Flick>
             </KeyState>
@@ -313,7 +313,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_w"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_w"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_w"
                         mozc:sourceId="119" />
                 </Flick>
             </KeyState>
@@ -323,7 +323,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_w"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_w"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_w"
                         mozc:sourceId="87" />
                 </Flick>
             </KeyState>
@@ -333,7 +333,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_e"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_e"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_e"
                         mozc:sourceId="101" />
                 </Flick>
             </KeyState>
@@ -343,7 +343,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_e"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_e"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_e"
                         mozc:sourceId="69" />
                 </Flick>
             </KeyState>
@@ -353,7 +353,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_r"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_r"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_r"
                         mozc:sourceId="114" />
                 </Flick>
             </KeyState>
@@ -363,7 +363,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_r"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_r"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_r"
                         mozc:sourceId="82" />
                 </Flick>
             </KeyState>
@@ -373,7 +373,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_t"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_t"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_t"
                         mozc:sourceId="116" />
                 </Flick>
             </KeyState>
@@ -383,7 +383,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_t"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_t"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_t"
                         mozc:sourceId="84" />
                 </Flick>
             </KeyState>
@@ -393,7 +393,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_y"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_y"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_y"
                         mozc:sourceId="121" />
                 </Flick>
             </KeyState>
@@ -403,7 +403,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_y"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_y"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_y"
                         mozc:sourceId="89" />
                 </Flick>
             </KeyState>
@@ -413,7 +413,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_u"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_u"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_u"
                         mozc:sourceId="117" />
                 </Flick>
             </KeyState>
@@ -423,7 +423,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_u"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_u"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_u"
                         mozc:sourceId="85" />
                 </Flick>
             </KeyState>
@@ -433,7 +433,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_i"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_i"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_i"
                         mozc:sourceId="105" />
                 </Flick>
             </KeyState>
@@ -443,7 +443,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_i"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_i"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_i"
                         mozc:sourceId="73" />
                 </Flick>
             </KeyState>
@@ -453,7 +453,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_o"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_o"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_o"
                         mozc:sourceId="111" />
                 </Flick>
             </KeyState>
@@ -463,7 +463,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_o"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_o"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_o"
                         mozc:sourceId="79" />
                 </Flick>
             </KeyState>
@@ -473,7 +473,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_p"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_p"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_p"
                         mozc:sourceId="112" />
                 </Flick>
             </KeyState>
@@ -483,7 +483,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_p"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_p"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_p"
                         mozc:sourceId="80" />
                 </Flick>
             </KeyState>
@@ -493,7 +493,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_commercial_at"
-                        mozc:keyIcon="@raw/jis__keyicon__commercial_at"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_commercial_at"
                         mozc:sourceId="64" />
                 </Flick>
             </KeyState>
@@ -503,7 +503,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_grave_accent"
-                        mozc:keyIcon="@raw/jis__keyicon__grave_accent"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_grave_accent"
                         mozc:sourceId="96" />
                 </Flick>
             </KeyState>
@@ -513,7 +513,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_left_square_bracket"
-                        mozc:keyIcon="@raw/jis__keyicon__left_square_bracket"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_left_square_bracket"
                         mozc:sourceId="91" />
                 </Flick>
             </KeyState>
@@ -523,7 +523,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_left_curly_bracket"
-                        mozc:keyIcon="@raw/jis__keyicon__left_curly_bracket"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_left_curly_bracket"
                         mozc:sourceId="123" />
                 </Flick>
             </KeyState>
@@ -535,7 +535,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_a"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_a"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_a"
                         mozc:sourceId="97" />
                 </Flick>
             </KeyState>
@@ -545,7 +545,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_a"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_a"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_a"
                         mozc:sourceId="65" />
                 </Flick>
             </KeyState>
@@ -555,7 +555,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_s"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_s"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_s"
                         mozc:sourceId="115" />
                 </Flick>
             </KeyState>
@@ -565,7 +565,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_s"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_s"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_s"
                         mozc:sourceId="83" />
                 </Flick>
             </KeyState>
@@ -575,7 +575,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_d"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_d"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_d"
                         mozc:sourceId="100" />
                 </Flick>
             </KeyState>
@@ -585,7 +585,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_d"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_d"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_d"
                         mozc:sourceId="68" />
                 </Flick>
             </KeyState>
@@ -595,7 +595,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_f"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_f"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_f"
                         mozc:sourceId="102" />
                 </Flick>
             </KeyState>
@@ -605,7 +605,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_f"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_f"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_f"
                         mozc:sourceId="70" />
                 </Flick>
             </KeyState>
@@ -615,7 +615,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_g"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_g"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_g"
                         mozc:sourceId="103" />
                 </Flick>
             </KeyState>
@@ -625,7 +625,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_g"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_g"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_g"
                         mozc:sourceId="71" />
                 </Flick>
             </KeyState>
@@ -635,7 +635,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_h"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_h"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_h"
                         mozc:sourceId="104" />
                 </Flick>
             </KeyState>
@@ -645,7 +645,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_h"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_h"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_h"
                         mozc:sourceId="72" />
                 </Flick>
             </KeyState>
@@ -655,7 +655,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_j"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_j"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_j"
                         mozc:sourceId="106" />
                 </Flick>
             </KeyState>
@@ -665,7 +665,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_j"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_j"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_j"
                         mozc:sourceId="74" />
                 </Flick>
             </KeyState>
@@ -675,7 +675,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_k"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_k"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_k"
                         mozc:sourceId="107" />
                 </Flick>
             </KeyState>
@@ -685,7 +685,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_k"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_k"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_k"
                         mozc:sourceId="75" />
                 </Flick>
             </KeyState>
@@ -695,7 +695,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_l"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_l"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_l"
                         mozc:sourceId="108" />
                 </Flick>
             </KeyState>
@@ -705,7 +705,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_l"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_l"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_l"
                         mozc:sourceId="76" />
                 </Flick>
             </KeyState>
@@ -715,7 +715,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_semicolon"
-                        mozc:keyIcon="@raw/jis__keyicon__semicolon"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_semicolon"
                         mozc:sourceId="59" />
                 </Flick>
             </KeyState>
@@ -725,7 +725,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_plus_sign"
-                        mozc:keyIcon="@raw/jis__keyicon__plus_sign"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_plus_sign"
                         mozc:sourceId="43" />
                 </Flick>
             </KeyState>
@@ -735,7 +735,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_colon"
-                        mozc:keyIcon="@raw/jis__keyicon__colon"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_colon"
                         mozc:sourceId="58" />
                 </Flick>
             </KeyState>
@@ -745,7 +745,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_asterisk"
-                        mozc:keyIcon="@raw/jis__keyicon__asterisk"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_asterisk"
                         mozc:sourceId="42" />
                 </Flick>
             </KeyState>
@@ -755,7 +755,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_right_square_bracket"
-                        mozc:keyIcon="@raw/jis__keyicon__right_square_bracket"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_right_square_bracket"
                         mozc:sourceId="93" />
                 </Flick>
             </KeyState>
@@ -765,7 +765,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_right_curly_bracket"
-                        mozc:keyIcon="@raw/jis__keyicon__right_curly_bracket"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_right_curly_bracket"
                         mozc:sourceId="125" />
                 </Flick>
             </KeyState>
@@ -777,7 +777,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_z"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_z"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_z"
                         mozc:sourceId="122" />
                 </Flick>
             </KeyState>
@@ -787,7 +787,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_z"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_z"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_z"
                         mozc:sourceId="90" />
                 </Flick>
             </KeyState>
@@ -797,7 +797,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_x"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_x"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_x"
                         mozc:sourceId="120" />
                 </Flick>
             </KeyState>
@@ -807,7 +807,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_x"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_x"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_x"
                         mozc:sourceId="88" />
                 </Flick>
             </KeyState>
@@ -817,7 +817,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_c"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_c"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_c"
                         mozc:sourceId="99" />
                 </Flick>
             </KeyState>
@@ -827,7 +827,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_c"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_c"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_c"
                         mozc:sourceId="67" />
                 </Flick>
             </KeyState>
@@ -837,7 +837,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_v"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_v"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_v"
                         mozc:sourceId="118" />
                 </Flick>
             </KeyState>
@@ -847,7 +847,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_v"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_v"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_v"
                         mozc:sourceId="86" />
                 </Flick>
             </KeyState>
@@ -857,7 +857,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_b"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_b"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_b"
                         mozc:sourceId="98" />
                 </Flick>
             </KeyState>
@@ -867,7 +867,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_b"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_b"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_b"
                         mozc:sourceId="66" />
                 </Flick>
             </KeyState>
@@ -877,7 +877,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_n"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_n"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_n"
                         mozc:sourceId="110" />
                 </Flick>
             </KeyState>
@@ -887,7 +887,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_n"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_n"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_n"
                         mozc:sourceId="78" />
                 </Flick>
             </KeyState>
@@ -897,7 +897,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_small_letter_m"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_small_letter_m"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_small_letter_m"
                         mozc:sourceId="109" />
                 </Flick>
             </KeyState>
@@ -907,7 +907,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_latin_capital_letter_m"
-                        mozc:keyIcon="@raw/jis__keyicon__latin_capital_letter_m"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_latin_capital_letter_m"
                         mozc:sourceId="77" />
                 </Flick>
             </KeyState>
@@ -917,7 +917,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_comma"
-                        mozc:keyIcon="@raw/jis__keyicon__comma"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_comma"
                         mozc:sourceId="44" />
                 </Flick>
             </KeyState>
@@ -927,7 +927,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_less_than_sign"
-                        mozc:keyIcon="@raw/jis__keyicon__less_than_sign"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_less_than_sign"
                         mozc:sourceId="60" />
                 </Flick>
             </KeyState>
@@ -937,7 +937,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_full_stop"
-                        mozc:keyIcon="@raw/jis__keyicon__full_stop"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_full_stop"
                         mozc:sourceId="46" />
                 </Flick>
             </KeyState>
@@ -947,7 +947,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_greater_than_sign"
-                        mozc:keyIcon="@raw/jis__keyicon__greater_than_sign"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_greater_than_sign"
                         mozc:sourceId="62" />
                 </Flick>
             </KeyState>
@@ -957,7 +957,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_solidus"
-                        mozc:keyIcon="@raw/jis__keyicon__solidus"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_solidus"
                         mozc:sourceId="47" />
                 </Flick>
             </KeyState>
@@ -967,7 +967,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_question_mark"
-                        mozc:keyIcon="@raw/jis__keyicon__question_mark"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_question_mark"
                         mozc:sourceId="63" />
                 </Flick>
             </KeyState>
@@ -977,7 +977,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_reverse_solidus"
-                        mozc:keyIcon="@raw/jis__keyicon__reverse_solidus"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_reverse_solidus"
                         mozc:sourceId="92" />
                 </Flick>
             </KeyState>
@@ -987,7 +987,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_low_line"
-                        mozc:keyIcon="@raw/jis__keyicon__low_line"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_low_line"
                         mozc:sourceId="95" />
                 </Flick>
             </KeyState>
@@ -997,7 +997,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_yen_sign"
-                        mozc:keyIcon="@raw/jis__keyicon__yen_sign"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_yen_sign"
                         mozc:sourceId="165" />
                 </Flick>
             </KeyState>
@@ -1007,7 +1007,7 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="@integer/uchar_vertical_line"
-                        mozc:keyIcon="@raw/jis__keyicon__vertical_line"
+                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_vertical_line"
                         mozc:sourceId="124" />
                 </Flick>
             </KeyState>

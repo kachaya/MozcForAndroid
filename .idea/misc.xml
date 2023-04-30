@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/GitHub/MozcForAndroid/app/src/main/res/layout/pref_keyboard_layout_item.xml" value="0.17760416666666667" />
         <entry key="..\:/GitHub/MozcForAndroid/app/src/main/res/xml/pref_development.xml" value="0.17760416666666667" />
+        <entry key="..\:/GitHub/MozcForAndroid/app/src/main/res/xml/pref_input_support.xml" value="0.17760416666666667" />
+        <entry key="..\:/GitHub/MozcForAndroid/app/src/main/res/xml/pref_software_keyboard_advanced.xml" value="0.17760416666666667" />
       </map>
     </option>
   </component>
