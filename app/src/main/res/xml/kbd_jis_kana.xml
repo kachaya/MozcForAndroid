@@ -996,7 +996,7 @@
             mozc:isModifier="true"
             mozc:keyBackground="qwertyFunction"
             mozc:keyEdgeFlags="left"
-            mozc:keyWidth="11%p">
+            mozc:keyWidth="12.5%p">
             <KeyState
                 mozc:contentDescription="@string/cd_key_shift"
                 mozc:nextMetaState="shift">
@@ -1033,7 +1033,7 @@
         </Key>
         <Key
             mozc:keyBackground="qwertyFunctionWithThreeDots"
-            mozc:keyWidth="11%p">
+            mozc:keyWidth="12.5%p">
             <KeyState mozc:contentDescription="@string/cd_key_chartype_to_abc">
                 <Flick>
                     <KeyEntity
@@ -1062,7 +1062,7 @@
         </Key>
         <Key
             mozc:keyBackground="qwertyFunctionSpaceWithThreeDots"
-            mozc:keyWidth="20%p">
+            mozc:keyWidth="17%p">
             <KeyState mozc:contentDescription="@string/cd_key_uchar_space">
                 <Flick>
                     <KeyEntity
