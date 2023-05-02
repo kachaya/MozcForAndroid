@@ -1066,10 +1066,10 @@
             <KeyState mozc:contentDescription="@string/cd_key_uchar_space">
                 <Flick>
                     <KeyEntity
-                        mozc:iconHeight="@dimen/keyboard_qwerty_space_height"
+                        mozc:iconHeight="@dimen/default_function_icon_height"
                         mozc:iconWidth="@dimen/unlimited"
                         mozc:keyCode="@integer/uchar_space"
-                        mozc:keyIcon="@raw/qwerty__function__space__icon"
+                        mozc:keyIcon="@raw/jis__keyicon__open_box"
                         mozc:longPressKeyCode="@integer/key_ime_picker_dialog"
                         mozc:sourceId="-541" />
                 </Flick>
@@ -1079,7 +1079,7 @@
                 mozc:metaState="no_globe">
                 <Flick>
                     <KeyEntity
-                        mozc:iconHeight="@dimen/keyboard_qwerty_space_height"
+                        mozc:iconHeight="@dimen/default_function_icon_height"
                         mozc:iconWidth="@dimen/unlimited"
                         mozc:keyCode="@integer/uchar_space"
                         mozc:keyIcon="@null"
