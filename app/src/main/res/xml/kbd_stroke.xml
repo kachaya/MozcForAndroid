@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress ALL -->
+<Keyboard xmlns:mozc="http://schemas.android.com/apk/res-auto"
+    mozc:defaultIconHeight="@dimen/default_function_icon_height"
+    mozc:defaultIconWidth="@dimen/unlimited"
+    mozc:flickThreshold="32dip"
+    mozc:horizontalGap="0dip"
+    mozc:keyBackground="qwertyFunction"
+    mozc:keyHeight="25%p"
+    mozc:keyHorizontalLayoutWeight="1"
+    mozc:keyWidth="15%p"
+    mozc:keyboardContentDescription="@string/cd_keyboard_kana"
+    mozc:popUpHeight="@dimen/key_preview_height"
+    mozc:popUpIconHeight="@dimen/key_preview_icon_height"
+    mozc:popUpXOffset="0dip"
+    mozc:popUpYOffset="@dimen/mini_keyboard_vertical_correction"
+    mozc:verticalGap="0dip">
+    <Row mozc:keyHeight="100%p">
+        <Key
+            mozc:keyBackground="transparent"
+            mozc:keyHeight="100%p"
+            mozc:keyWidth="100%p">
+            <KeyState mozc:contentDescription="stroke">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="@integer/key_stroke"
+                        mozc:sourceId="1" />
+                </Flick>
+            </KeyState>
+        </Key>
+    </Row>
+</Keyboard>

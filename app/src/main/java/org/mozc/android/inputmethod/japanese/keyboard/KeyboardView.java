@@ -29,25 +29,13 @@
 
 package org.mozc.android.inputmethod.japanese.keyboard;
 
-import org.mozc.android.inputmethod.japanese.MemoryManageable;
-import org.mozc.android.inputmethod.japanese.accessibility.AccessibilityUtil;
-import org.mozc.android.inputmethod.japanese.accessibility.KeyboardAccessibilityDelegate;
-import org.mozc.android.inputmethod.japanese.keyboard.KeyState.MetaState;
-import org.mozc.android.inputmethod.japanese.protobuf.ProtoCommands.Input.TouchAction;
-import org.mozc.android.inputmethod.japanese.protobuf.ProtoCommands.Input.TouchEvent;
-import org.mozc.android.inputmethod.japanese.R;
-import org.mozc.android.inputmethod.japanese.view.DrawableCache;
-import org.mozc.android.inputmethod.japanese.view.Skin;
-import com.google.common.annotations.VisibleForTesting;
-import com.google.common.base.Optional;
-import com.google.common.base.Preconditions;
-import com.google.common.collect.ForwardingMap;
-import com.google.common.collect.Sets;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Path;
+import android.graphics.RectF;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.v4.view.ViewCompat;
@@ -56,6 +44,23 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
+
+import com.google.common.annotations.VisibleForTesting;
+import com.google.common.base.Optional;
+import com.google.common.base.Preconditions;
+import com.google.common.collect.ForwardingMap;
+import com.google.common.collect.Sets;
+
+import org.mozc.android.inputmethod.japanese.MemoryManageable;
+import org.mozc.android.inputmethod.japanese.R;
+import org.mozc.android.inputmethod.japanese.accessibility.AccessibilityUtil;
+import org.mozc.android.inputmethod.japanese.accessibility.KeyboardAccessibilityDelegate;
+import org.mozc.android.inputmethod.japanese.keyboard.KeyState.MetaState;
+import org.mozc.android.inputmethod.japanese.protobuf.ProtoCommands.CompositionMode;
+import org.mozc.android.inputmethod.japanese.protobuf.ProtoCommands.Input.TouchAction;
+import org.mozc.android.inputmethod.japanese.protobuf.ProtoCommands.Input.TouchEvent;
+import org.mozc.android.inputmethod.japanese.view.DrawableCache;
+import org.mozc.android.inputmethod.japanese.view.Skin;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -97,6 +102,17 @@ public class KeyboardView extends View implements MemoryManageable {
 
   /** Just for testing purpose. If true, HANDLING_TOUCH_EVENET metastate is removed directly. */
   @VisibleForTesting boolean enableDelayForHandlingTouchEvent = true;
+
+  private final Resources resources;
+
+  private Key strokeKey;
+  private boolean isPunctuation;
+  private boolean isCapsShift;
+  private boolean isCapsLock;
+  private Path strokeDrawPath;
+  private Paint strokeDrawPaint;
+  private Skin skin;
+  private final float AREA_RATIO = 0.5f;
 
   /**
    * Decorator class for {@code Map} for {@code KeyEventContextMap}.
@@ -213,9 +229,11 @@ public class KeyboardView extends View implements MemoryManageable {
   // Initializer shared by constructors.
   {
     Context context = getContext();
-    Resources res = context.getResources();
-    popupDismissDelay = res.getInteger(R.integer.config_popup_dismiss_delay);
-    scaledDensity = res.getDisplayMetrics().scaledDensity;
+    resources = context.getResources();
+    popupDismissDelay = resources.getInteger(R.integer.config_popup_dismiss_delay);
+    scaledDensity = resources.getDisplayMetrics().scaledDensity;
+
+
     accessibilityDelegate = new KeyboardAccessibilityDelegate(
         this, new KeyboardAccessibilityDelegate.TouchEventEmulator() {
           @Override
@@ -334,6 +352,25 @@ public class KeyboardView extends View implements MemoryManageable {
     this.drawableCache.clear();
     backgroundSurface.reset(this.keyboard, Collections.<MetaState>emptySet());
     invalidateIfRequired();
+
+    // initialize stroke
+    int strokeKeyCode = resources.getInteger(R.integer.key_stroke);
+    strokeKey = null;
+    List<Row> rowList = keyboard.getRowList();//keyboard.get().getRowList();
+    for (Row row : rowList) {
+      for (Key key : row.getKeyList()) {
+        for (KeyState keyState : key.getKeyStates()) {
+          Optional<Flick> flick = keyState.getFlick(Flick.Direction.CENTER);
+          if (flick.get().getKeyEntity().getKeyCode() == strokeKeyCode) {
+            strokeKey = key;
+            break;
+          }
+        }
+      }
+    }
+    if (strokeKey != null) {
+      strokeKeyInitialize();
+    }
   }
 
   public void setPopupEnabled(boolean popupEnabled) {
@@ -363,6 +400,7 @@ public class KeyboardView extends View implements MemoryManageable {
       backgroundSurface.reset(this.keyboard, Collections.<MetaState>emptySet());
     }
     setBackgroundDrawable(skin.windowBackgroundDrawable.getConstantState().newDrawable());
+    this.skin = skin;
   }
 
   public void setKeyEventHandler(KeyEventHandler keyEventHandler) {
@@ -388,6 +426,11 @@ public class KeyboardView extends View implements MemoryManageable {
     }
     // Draw keyboard.
     backgroundSurface.draw(canvas);
+
+    // Draw stroke key
+    if (strokeKey != null) {
+      drawStrokeKey(canvas);
+    }
   }
 
   @SuppressLint("InlinedApi")
@@ -421,6 +464,12 @@ public class KeyboardView extends View implements MemoryManageable {
     final KeyEventContext keyEventContext = new KeyEventContext(
         optionalKey.get(), pointerId, x, y, getWidth(), getHeight(),
         flickThreshold * flickThreshold, metaState);
+
+    if (strokeKey != null) {
+      if (optionalKey.get().equals(strokeKey)) {
+        processStrokeOnDown(x, y, keyEventContext);
+      }
+    }
 
     // Show popup.
     updatePopUp(keyEventContext, false);
@@ -512,6 +561,11 @@ public class KeyboardView extends View implements MemoryManageable {
     int pressedKeyCode = keyEventContext.getPressedKeyCode();
 
     if (keyEventHandler.isPresent()) {
+      if (strokeKey != null) {
+        if (keyEventContext.key.equals(strokeKey)) {
+          keyCode = processStrokeOnUp();
+        }
+      }
       if (keyCode != KeyEntity.INVALID_KEY_CODE) {
         // TODO(hsumita): Confirm that we can put null as a touch event or not.
         keyEventHandler.get().sendKey(keyCode,
@@ -554,6 +608,10 @@ public class KeyboardView extends View implements MemoryManageable {
       KeyEventContext keyEventContext = keyEventContextMap.get(event.getPointerId(i));
       if (keyEventContext == null) {
         continue;
+      }
+
+      if (strokeKey != null) {
+        processStrokeOnMove(event.getX(), event.getY(), keyEventContext);
       }
 
       Key key = keyEventContext.key;
@@ -816,5 +874,227 @@ public class KeyboardView extends View implements MemoryManageable {
     if (backgroundSurface.isDirty()) {
       invalidate();
     }
+  }
+
+  private void strokeKeyInitialize() {
+    strokeDrawPath = new Path();
+    strokeDrawPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+    strokeDrawPaint.setStrokeJoin(Paint.Join.ROUND);
+    strokeDrawPaint.setStrokeWidth(1);
+  }
+
+  private int charToKeyCode(char c) {
+    switch (c) {
+      case 'N':
+        return KeyEntity.INVALID_KEY_CODE;
+      case 'B':
+        return resources.getInteger(R.integer.key_backspace);
+      case 'E':
+        return resources.getInteger(R.integer.key_enter);
+      case 'L':
+        return resources.getInteger(R.integer.key_left);
+      case 'R':
+        return resources.getInteger(R.integer.key_right);
+      case 'U':
+        return resources.getInteger(R.integer.key_up);
+      case 'D':
+        return resources.getInteger(R.integer.key_down);
+      case 'S':
+        return resources.getInteger(R.integer.key_symbol_emoji);
+      case 'P':
+        return resources.getInteger(R.integer.key_menu_dialog);
+      case 'M':
+        if (keyboard.get().specification.getCompositionMode() == CompositionMode.HIRAGANA) {
+          return resources.getInteger(R.integer.key_chartype_to_abc);
+        } else {
+          return resources.getInteger(R.integer.key_chartype_to_kana);
+        }
+      default:
+        return c;
+    }
+  }
+
+  private void processStrokeOnDown(float x, float y, KeyEventContext keyEventContext) {
+    strokeDrawPath.reset();
+    strokeDrawPath.moveTo(x, y);
+    invalidate();
+  }
+
+  private void processStrokeOnMove(float x, float y, KeyEventContext keyEventContext) {
+    strokeDrawPath.lineTo(x, y);
+    invalidate();
+  }
+
+  private int processStrokeOnUp() {
+    int keyCode;
+    Path path = new Path(strokeDrawPath);
+    strokeDrawPath.reset();
+    RectF bounds = new RectF();
+    path.computeBounds(bounds, true);
+    boolean isTap = (bounds.width() > 1 && bounds.height() > 1) ? false : true;
+    Stroke.Result result = Stroke.recognize(path);
+    // Punctuation
+    char p = result.p;
+    if (isPunctuation) {
+      if (isTap) {
+        keyCode = '.';
+      } else {
+        if (p == 'B') {   // BackSpace
+          keyCode = KeyEntity.INVALID_KEY_CODE;
+        } else {
+          keyCode = charToKeyCode(p);
+        }
+      }
+      isPunctuation = false;
+      return keyCode;
+    }
+    if (isTap) {
+      isPunctuation = true;
+      return KeyEntity.INVALID_KEY_CODE;
+    }
+    // Numeric
+    if (bounds.centerX() > getWidth() * AREA_RATIO) {
+      char n = result.n;
+      return charToKeyCode(n);
+    }
+    // Alphabet
+    char a = result.a;
+    if (a == 'C') {
+      if (isCapsLock) {
+        isCapsLock = false;
+        isCapsShift = false;
+      } else {
+        if (isCapsShift) {
+          isCapsLock = true;
+          isCapsShift = false;
+        } else {
+          isCapsShift = true;
+        }
+      }
+      return KeyEntity.INVALID_KEY_CODE;
+    }
+    if (a == 'B') {   // BackSpace
+      if (isCapsShift) {
+        isCapsShift = false;
+        return KeyEntity.INVALID_KEY_CODE;
+      }
+    }
+    keyCode = charToKeyCode(a);
+    if (isCapsShift || isCapsLock) {
+      if (Character.isLowerCase(a)) {
+        keyCode = Character.toUpperCase(a);
+      }
+    }
+    isCapsShift = false;
+    return keyCode;
+  }
+
+  private void drawKeyFrame(Canvas canvas, RectF rect) {
+    float r = rect.height() * 0.02f;
+    float areaX = rect.left + rect.width() * AREA_RATIO;
+
+    strokeDrawPaint.setStrokeWidth(1);
+    strokeDrawPaint.setStyle(Paint.Style.STROKE);
+
+    canvas.drawRoundRect(rect, r * 2, r * 2, strokeDrawPaint);
+    canvas.drawLine(areaX, rect.top, areaX, rect.bottom, strokeDrawPaint);
+  }
+
+  private void drawMetaIndicator(Canvas canvas, RectF rect) {
+    float w = rect.width();
+    float h = rect.height();
+    float cx = rect.centerX();
+    float cy = rect.centerY();
+
+    strokeDrawPaint.setStrokeWidth(1);
+    strokeDrawPaint.setStyle(Paint.Style.FILL_AND_STROKE);
+
+    if (isPunctuation) {
+      canvas.drawCircle(cx, cy, h * 0.3f, strokeDrawPaint);
+      return;
+    }
+    Path path = new Path();
+    if (isCapsShift) {
+      path.moveTo(cx - w * 0.2f, cy + h * 0.4f);
+      path.lineTo(cx - w * 0.2f, cy);
+      path.lineTo(cx - w * 0.4f, cy);
+      path.lineTo(cx, cy - h * 0.4f);
+      path.lineTo(cx + w * 0.4f, cy);
+      path.lineTo(cx + w * 0.2f, cy);
+      path.lineTo(cx + w * 0.2f, cy + h * 0.4f);
+      path.close();
+      canvas.drawPath(path, strokeDrawPaint);
+      return;
+    }
+    if (isCapsLock) {
+      path.moveTo(cx - w * 0.2f, cy + h * 0.1f);
+      path.lineTo(cx - w * 0.2f, cy);
+      path.lineTo(cx - w * 0.4f, cy);
+      path.lineTo(cx, cy - h * 0.4f);
+      path.lineTo(cx + w * 0.4f, cy);
+      path.lineTo(cx + w * 0.2f, cy);
+      path.lineTo(cx + w * 0.2f, cy + h * 0.1f);
+      path.close();
+      canvas.drawPath(path, strokeDrawPaint);
+      path.reset();
+      path.moveTo(cx - w * 0.2f, cy + h * 0.2f);
+      path.lineTo(cx - w * 0.2f, cy + h * 0.4f);
+      path.lineTo(cx + w * 0.2f, cy + h * 0.4f);
+      path.lineTo(cx + w * 0.2f, cy + h * 0.2f);
+      path.close();
+      canvas.drawPath(path, strokeDrawPaint);
+      return;
+    }
+  }
+
+  private void drawTextIndicator(Canvas canvas, RectF rect, String text) {
+    strokeDrawPaint.setStrokeWidth(0);
+    strokeDrawPaint.setTextSize(rect.height() * 0.9f);
+    Paint.FontMetrics fontMetrics = strokeDrawPaint.getFontMetrics();
+    float textWidth = strokeDrawPaint.measureText(text);
+    float baseX = rect.centerX() - textWidth / 2;
+    float baseY = rect.centerY() - (fontMetrics.ascent + fontMetrics.descent) / 2;
+    canvas.drawText(text, baseX, baseY, strokeDrawPaint);
+  }
+
+  private void drawStrokeKey(Canvas canvas) {
+    float x = strokeKey.getX();
+    float y = strokeKey.getY();
+    float w = strokeKey.getWidth();
+    float h = strokeKey.getHeight();
+    float r = h * 0.01f;    // 高さの1%
+
+    strokeDrawPaint.setColor(skin.keyIconMainColor);
+
+    // 枠を描画
+    RectF rect = new RectF(x + r, y + r, x + w - r, y + h - r);
+    drawKeyFrame(canvas, rect);
+
+    // 左下に'a'を描画
+    rect = new RectF(x + h * 0.05f, y + h * 0.85f, x + h * 0.15f, y + h * 0.95f);
+    drawTextIndicator(canvas, rect, "a");
+
+    // 右下に'1'を描画
+    rect = new RectF(x + w - h * 0.05f, y + h * 0.85f, x + w - h * 0.15f, y + h * 0.95f);
+    drawTextIndicator(canvas, rect, "1");
+
+    // 左上のシフト状態描画
+    rect = new RectF(x + h * 0.05f, y + h * 0.05f, x + h * 0.2f, y + h * 0.2f);
+    drawMetaIndicator(canvas, rect);
+
+    // 右上に「あ/Ａ」を描画
+    rect = new RectF(x + w - h * 0.2f, y + h * 0.05f, x + w - h * 0.05f, y + h * 0.2f);
+    String s;
+    if (keyboard.get().specification.getCompositionMode() == CompositionMode.HIRAGANA) {
+      s = "あ";
+    } else {
+      s = "Ａ";
+    }
+    drawTextIndicator(canvas, rect, s);
+
+    // 入力ストロークを描画
+    strokeDrawPaint.setStrokeWidth(3);
+    strokeDrawPaint.setStyle(Paint.Style.STROKE);
+    canvas.drawPath(strokeDrawPath, strokeDrawPaint);
   }
 }

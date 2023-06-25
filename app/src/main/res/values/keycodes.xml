@@ -52,6 +52,9 @@
   <integer name="key_symbol_emoji">-27</integer>
   <!-- Next available value is -28. -->
 
+  <!-- Stroke input key -->
+  <integer name="key_stroke">-100</integer>
+
   <!-- Deprecate : Use uchar_backspace -->
   <integer name="key_backspace">8</integer>
 

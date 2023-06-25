@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
@@ -7,10 +6,14 @@
         <entry key="..\:/GitHub/MozcForAndroid/app/src/main/res/xml/pref_development.xml" value="0.17760416666666667" />
         <entry key="..\:/GitHub/MozcForAndroid/app/src/main/res/xml/pref_input_support.xml" value="0.17760416666666667" />
         <entry key="..\:/GitHub/MozcForAndroid/app/src/main/res/xml/pref_software_keyboard_advanced.xml" value="0.17760416666666667" />
+        <entry key="..\:/StrokeMozc/app/src/main/res/drawable/action_bar_item_background_released.xml" value="0.211" />
+        <entry key="..\:/StrokeMozc/app/src/main/res/drawable/status_icon_alphabet.xml" value="0.172" />
+        <entry key="..\:/StrokeMozc/app/src/main/res/drawable/status_icon_hiragana.xml" value="0.172" />
+        <entry key="..\:/StrokeMozc/app/src/main/res/drawable/symbol_input_background.xml" value="0.172" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

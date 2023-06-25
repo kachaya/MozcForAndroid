@@ -68,6 +68,27 @@ public class Keyboard {
         true,
         CrossingEdgeBehavior.DO_NOTHING),
 
+    // Stroke keyboard.
+    STROKE_KANA(
+        new KeyboardSpecificationName("STROKE_KANA", 0, 1, 0),
+        R.xml.kbd_stroke,
+        false,
+        CompositionMode.HIRAGANA,
+        SpecialRomanjiTable.DEFAULT_TABLE,
+        SpaceOnAlphanumeric.SPACE_OR_CONVERT_KEEPING_COMPOSITION,
+        true,
+        CrossingEdgeBehavior.DO_NOTHING),
+
+    STROKE_ALPHABET(
+        new KeyboardSpecificationName("STROKE_ALPHABET", 0, 1, 0),
+        R.xml.kbd_stroke,
+        false,
+        CompositionMode.HALF_ASCII,
+        SpecialRomanjiTable.QWERTY_MOBILE_TO_HALFWIDTHASCII,
+        SpaceOnAlphanumeric.COMMIT,
+        false,
+        CrossingEdgeBehavior.COMMIT_WITHOUT_CONSUMING),
+
     // 12 keys.
     TWELVE_KEY_TOGGLE_KANA(
         new KeyboardSpecificationName("TWELVE_KEY_TOGGLE_KANA", 0, 2, 0),

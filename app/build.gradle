@@ -8,7 +8,7 @@ android {
     defaultConfig {
         applicationId "org.mozc.android.inputmethod.japanese"
         minSdk 22
-        targetSdk 22
+        targetSdk 23
     }
 
     buildTypes {
