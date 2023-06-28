@@ -989,17 +989,6 @@ public class KeyboardView extends View implements MemoryManageable {
     return keyCode;
   }
 
-  private void drawKeyFrame(Canvas canvas, RectF rect) {
-    float r = rect.height() * 0.02f;
-    float areaX = rect.left + rect.width() * AREA_RATIO;
-
-    strokeDrawPaint.setStrokeWidth(1);
-    strokeDrawPaint.setStyle(Paint.Style.STROKE);
-
-    canvas.drawRoundRect(rect, r * 2, r * 2, strokeDrawPaint);
-    canvas.drawLine(areaX, rect.top, areaX, rect.bottom, strokeDrawPaint);
-  }
-
   private void drawMetaIndicator(Canvas canvas, RectF rect) {
     float w = rect.width();
     float h = rect.height();
@@ -1066,17 +1055,7 @@ public class KeyboardView extends View implements MemoryManageable {
 
     strokeDrawPaint.setColor(skin.keyIconMainColor);
 
-    // 枠を描画
-    RectF rect = new RectF(x + r, y + r, x + w - r, y + h - r);
-    drawKeyFrame(canvas, rect);
-
-    // 左下に'a'を描画
-    rect = new RectF(x + h * 0.05f, y + h * 0.85f, x + h * 0.15f, y + h * 0.95f);
-    drawTextIndicator(canvas, rect, "a");
-
-    // 右下に'1'を描画
-    rect = new RectF(x + w - h * 0.05f, y + h * 0.85f, x + w - h * 0.15f, y + h * 0.95f);
-    drawTextIndicator(canvas, rect, "1");
+    RectF rect;
 
     // 左上のシフト状態描画
     rect = new RectF(x + h * 0.05f, y + h * 0.05f, x + h * 0.2f, y + h * 0.2f);

@@ -39,6 +39,7 @@ import org.mozc.android.inputmethod.japanese.view.QwertySpaceKeyDrawable;
 import org.mozc.android.inputmethod.japanese.view.RectKeyDrawable;
 import org.mozc.android.inputmethod.japanese.view.RoundRectKeyDrawable;
 import org.mozc.android.inputmethod.japanese.view.Skin;
+import org.mozc.android.inputmethod.japanese.view.StrokeKeyDrawable;
 import org.mozc.android.inputmethod.japanese.view.ThreeDotsIconDrawable;
 import org.mozc.android.inputmethod.japanese.view.TriangularHighlightDrawable;
 import org.mozc.android.inputmethod.japanese.view.TriangularHighlightDrawable.HighlightDirection;
@@ -98,6 +99,7 @@ public class BackgroundDrawableFactory {
     KEYBOARD_SEPARATOR_BOTTOM,
 
     TRNASPARENT,
+    STROKE,
 
     // Highlight for flicking.
     TWELVEKEYS_CENTER_FLICK,
@@ -379,6 +381,9 @@ public class BackgroundDrawableFactory {
 
       case TRNASPARENT:
         return DummyDrawable.getInstance();
+
+      case STROKE:
+        return new BufferedDrawable(new StrokeKeyDrawable(0, 0, 0, 0, skin.keyIconMainColor, skin.qwertyLayoutReleasedKeyTopColor));
 
       case TWELVEKEYS_CENTER_FLICK:
         return new CenterCircularHighlightDrawable(

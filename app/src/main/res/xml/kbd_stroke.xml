@@ -16,7 +16,7 @@
     mozc:verticalGap="0dip">
     <Row mozc:keyHeight="100%p">
         <Key
-            mozc:keyBackground="transparent"
+            mozc:keyBackground="stroke"
             mozc:keyHeight="100%p"
             mozc:keyWidth="100%p">
             <KeyState mozc:contentDescription="stroke">

@@ -60,6 +60,7 @@
       <enum name="keyboardSeparatorCenter" value="8" />
       <enum name="keyboardSeparatorBottom" value="9" />
       <enum name="transparent" value="10" />
+      <enum name="stroke" value="11" />
     </attr>
 
     <attr name="keyWidth" format="dimension|fraction" />

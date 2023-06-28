@@ -423,6 +423,7 @@ public class KeyboardParser {
     DrawableType.KEYBOARD_SEPARATOR_CENTER,
     DrawableType.KEYBOARD_SEPARATOR_BOTTOM,
     DrawableType.TRNASPARENT,
+    DrawableType.STROKE,
   };
 
   /**

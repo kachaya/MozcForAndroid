@@ -127,7 +127,6 @@ public class Stroke {
                     new Chars('N', 'N', '^'),
                     new Chars('c', '4', '('),
                     new Chars('u', '0', 'N'),
-                    null,
             }, "m 0,12 12,-6 -12,-6"));            // '>'
             // ()
             add(new Model(new Chars[]{
