@@ -37,6 +37,7 @@ import android.view.inputmethod.CorrectionInfo;
 import android.view.inputmethod.ExtractedText;
 import android.view.inputmethod.ExtractedTextRequest;
 import android.view.inputmethod.InputConnection;
+import android.view.inputmethod.InputConnectionWrapper;
 
 /**
  * The proxy of the {@code InputConnection} with tracking the composing text.
@@ -48,12 +49,13 @@ import android.view.inputmethod.InputConnection;
  * However, we can do nothing in such cases unfortunately, so just give them up.
  *
  */
-public class ComposingTextTrackingInputConnection implements InputConnection {
+public class ComposingTextTrackingInputConnection extends InputConnectionWrapper {
 
   private final InputConnection baseConnection;
   private String composingText = "";
 
   public ComposingTextTrackingInputConnection(InputConnection baseConnection) {
+    super(baseConnection, true);
     if (baseConnection == null) {
       throw new NullPointerException();
     }

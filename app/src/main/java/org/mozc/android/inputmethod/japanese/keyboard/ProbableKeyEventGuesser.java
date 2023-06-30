@@ -266,7 +266,7 @@ public class ProbableKeyEventGuesser {
           stats[j] = stream.readFloat();
         }
         stats[PRECALCULATED_DENOMINATOR] =
-            FloatMath.sqrt(stats[START_X_VAR] * stats[START_Y_VAR]
+                (float) Math.sqrt(stats[START_X_VAR] * stats[START_Y_VAR]
                            * stats[DELTA_X_VAR] * stats[DELTA_Y_VAR]);
         statsToUpdate.put(sourceId, stats);
       }

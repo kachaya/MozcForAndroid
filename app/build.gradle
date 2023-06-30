@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    compileSdk 22
+    compileSdk 25
 
     defaultConfig {
         applicationId "org.mozc.android.inputmethod.japanese"
         minSdk 22
-        targetSdk 23
+        targetSdk 25
     }
 
     buildTypes {
@@ -24,6 +24,7 @@ android {
 }
 
 dependencies {
+    implementation files('libs/org.apache.http.legacy.jar')
     implementation files('libs/android-support-v13.jar')
     implementation files('libs/guava.jar')
     implementation files('libs/jsr305.jar')
