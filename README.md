@@ -1,9 +1,9 @@
 # MozcForAndroid
-
+<p>
 <img src="Screenshot_STROKE.png" width="240px" />
 <img src="Screenshot_JISKANA.png" width="240px" />
 <img src="Screenshot_QWERTY.png" width="240px" />
-
+</p>
 PalmのGraffiti風ストローク入力キーボードを追加。
 
 * 日英切り替えは「左下→右上」のストローク
