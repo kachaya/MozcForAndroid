@@ -1,8 +1,8 @@
 # MozcForAndroid
 
-<img src="Screenshot_STROKE.png" style="zoom: 25%;" />
-<img src="Screenshot_JISKANA.png" style="zoom: 25%;" />
-<img src="Screenshot_QWERTY.png" style="zoom: 25%;" />
+<img src="Screenshot_STROKE.png" width="240px" />
+<img src="Screenshot_JISKANA.png" width="240px" />
+<img src="Screenshot_QWERTY.png" width="240px" />
 
 PalmのGraffiti風ストローク入力キーボードを追加。
 
