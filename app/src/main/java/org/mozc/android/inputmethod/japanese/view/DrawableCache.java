@@ -36,6 +36,9 @@ import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.util.SparseArray;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Cache of android's Drawable instances.
  *
@@ -43,6 +46,7 @@ import android.util.SparseArray;
 public class DrawableCache {
 
   private final SparseArray<Drawable> cacheMap = new SparseArray<Drawable>(128);
+  private final Map<String, Drawable> hashMap = new HashMap<>(256);
   private Skin skin = Skin.getFallbackInstance();
   private final Resources resources;
 
@@ -58,7 +62,7 @@ public class DrawableCache {
 
     this.skin = skin;
     cacheMap.clear();
-    // todo:clear cache
+    hashMap.clear();
   }
 
   /**
@@ -82,10 +86,13 @@ public class DrawableCache {
     return drawable;
   }
 
-  // todo:cache
   public Optional<Drawable> getDrawable(String keyCharacter) {
-    Optional<Drawable> drawable = Optional.of(
-              skin.getDrawable(resources, keyCharacter).getConstantState().newDrawable());
+    Optional<Drawable> drawable = Optional.fromNullable(hashMap.get(keyCharacter));
+    if (!drawable.isPresent()) {
+      drawable = Optional.of(
+          skin.getDrawable(resources, keyCharacter).getConstantState().newDrawable());
+      hashMap.put(keyCharacter, drawable.get());
+    }
     return drawable;
   }
 
