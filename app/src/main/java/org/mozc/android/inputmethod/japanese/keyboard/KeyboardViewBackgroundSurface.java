@@ -41,6 +41,7 @@ import com.google.common.collect.Sets;
 
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 
 import java.util.Collections;
 import java.util.EnumMap;
@@ -303,6 +304,19 @@ import javax.annotation.Nullable;
       return Optional.absent();
     }
 
+    int keyIconResoueceId = keyEntity.get().getKeyIconResourceId();
+    if (keyIconResoueceId == 0) {
+      int keyCode = keyEntity.get().getKeyCode();
+      if (keyCode > 0x20) {
+        String keyCharacter;
+        if (keyEntity.get().getKeyCharacter().isPresent()) {
+          keyCharacter = keyEntity.get().getKeyCharacter().get();
+        } else {
+          keyCharacter = String.valueOf((char)keyCode);
+        }
+        return setDrawableState(drawableCache.getDrawable(keyCharacter), isPressed);
+      }
+    }
     return setDrawableState(
         drawableCache.getDrawable(keyEntity.get().getKeyIconResourceId()), isPressed);
   }

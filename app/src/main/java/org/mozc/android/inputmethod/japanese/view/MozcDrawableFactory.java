@@ -38,6 +38,7 @@ import com.google.common.base.Preconditions;
 
 import android.content.res.AssetManager;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.LinearGradient;
 import android.graphics.Matrix;
@@ -53,6 +54,7 @@ import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.Shader.TileMode;
 import android.graphics.Typeface;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
 import android.os.Build;
@@ -150,6 +152,36 @@ class MozcDrawableFactory {
     this.resources = Preconditions.checkNotNull(resources);
     this.skin = Preconditions.checkNotNull(skin);
     ensureTypeface(resources.getAssets());
+  }
+
+  Optional<Drawable> getDrawable(String keyCharacter) {
+    int width = 48;
+    int height = 64;
+    float textSize = 48.0f;
+
+    Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+    Bitmap bitmap;
+    paint.setStyle(Style.FILL);
+    paint.setStrokeWidth(0);
+    paint.setTextSize(textSize);
+    paint.setTextAlign(Align.CENTER);
+
+    MozcStyle style = new MozcStyle();
+    resetStyle(style);
+    skin.apply(paint, Skin.STYLE_CATEGORY_KEYICON_MAIN);
+
+    bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+    Canvas canvas = new Canvas(bitmap);
+
+    float x = width / 2;
+    float y = height / 2  - ((paint.descent() + paint.ascent()) / 2);
+
+    canvas.drawText(keyCharacter, x, y, paint);
+    canvas.drawBitmap(bitmap, 0, 0, paint);
+
+    Drawable drawable = new BitmapDrawable(resources, bitmap);
+
+    return Optional.fromNullable(drawable);
   }
 
   Optional<Drawable> getDrawable(int resourceId) {

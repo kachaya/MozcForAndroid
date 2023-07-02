@@ -54,7 +54,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12396"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_nu"
                         mozc:sourceId="12396" />
                 </Flick>
             </KeyState>
@@ -64,7 +63,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="65284"
-                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_dollar_sign"
                         mozc:sourceId="65284" />
                 </Flick>
             </KeyState>
@@ -74,7 +72,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12405"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_hu"
                         mozc:sourceId="12405" />
                 </Flick>
             </KeyState>
@@ -91,7 +88,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12354"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_a"
                         mozc:sourceId="12354" />
                 </Flick>
             </KeyState>
@@ -101,7 +97,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12353"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_small_a"
                         mozc:sourceId="12353" />
                 </Flick>
             </KeyState>
@@ -111,7 +106,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12358"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_u"
                         mozc:sourceId="12358" />
                 </Flick>
             </KeyState>
@@ -121,7 +115,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12357"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_small_u"
                         mozc:sourceId="12357" />
                 </Flick>
             </KeyState>
@@ -131,7 +124,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12360"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_e"
                         mozc:sourceId="12360" />
                 </Flick>
             </KeyState>
@@ -141,7 +133,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12359"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_small_e"
                         mozc:sourceId="12359" />
                 </Flick>
             </KeyState>
@@ -151,7 +142,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12362"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_o"
                         mozc:sourceId="12362" />
                 </Flick>
             </KeyState>
@@ -161,7 +151,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12361"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_small_o"
                         mozc:sourceId="12361" />
                 </Flick>
             </KeyState>
@@ -171,7 +160,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12420"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_ya"
                         mozc:sourceId="12420" />
                 </Flick>
             </KeyState>
@@ -181,7 +169,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12419"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_small_ya"
                         mozc:sourceId="12419" />
                 </Flick>
             </KeyState>
@@ -191,7 +178,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12422"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_yu"
                         mozc:sourceId="12422" />
                 </Flick>
             </KeyState>
@@ -201,7 +187,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12421"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_small_yu"
                         mozc:sourceId="12421" />
                 </Flick>
             </KeyState>
@@ -211,7 +196,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12424"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_yo"
                         mozc:sourceId="12424" />
                 </Flick>
             </KeyState>
@@ -221,7 +205,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12423"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_small_yo"
                         mozc:sourceId="12423" />
                 </Flick>
             </KeyState>
@@ -231,7 +214,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12431"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_wa"
                         mozc:sourceId="12431" />
                 </Flick>
             </KeyState>
@@ -241,7 +223,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12434"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_wo"
                         mozc:sourceId="12434" />
                 </Flick>
             </KeyState>
@@ -251,7 +232,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12411"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_ho"
                         mozc:sourceId="12411" />
                 </Flick>
             </KeyState>
@@ -268,7 +248,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12408"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_he"
                         mozc:sourceId="12408" />
                 </Flick>
             </KeyState>
@@ -278,7 +257,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="65509"
-                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_yen_sign"
                         mozc:sourceId="65509" />
                 </Flick>
             </KeyState>
@@ -290,7 +268,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12383"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_ta"
                         mozc:sourceId="12383" />
                 </Flick>
             </KeyState>
@@ -300,7 +277,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="65286"
-                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_ampersand"
                         mozc:sourceId="65286" />
                 </Flick>
             </KeyState>
@@ -310,7 +286,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12390"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_te"
                         mozc:sourceId="12390" />
                 </Flick>
             </KeyState>
@@ -320,7 +295,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="65285"
-                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_percent_sign"
                         mozc:sourceId="65285" />
                 </Flick>
             </KeyState>
@@ -330,7 +304,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12356"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_i"
                         mozc:sourceId="12356" />
                 </Flick>
             </KeyState>
@@ -340,7 +313,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12355"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_small_i"
                         mozc:sourceId="12355" />
                 </Flick>
             </KeyState>
@@ -350,7 +322,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12377"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_su"
                         mozc:sourceId="12377" />
                 </Flick>
             </KeyState>
@@ -367,7 +338,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12363"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_ka"
                         mozc:sourceId="12363" />
                 </Flick>
             </KeyState>
@@ -377,7 +347,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12533"
-                        mozc:keyIcon="@raw/jis__keyicon__katakana_letter_small_ka"
                         mozc:sourceId="12533" />
                 </Flick>
             </KeyState>
@@ -387,7 +356,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12435"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_n"
                         mozc:sourceId="12435" />
                 </Flick>
             </KeyState>
@@ -404,7 +372,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12394"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_na"
                         mozc:sourceId="12394" />
                 </Flick>
             </KeyState>
@@ -414,7 +381,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12432"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_wi"
                         mozc:sourceId="12432" />
                 </Flick>
             </KeyState>
@@ -424,7 +390,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12395"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_ni"
                         mozc:sourceId="12395" />
                 </Flick>
             </KeyState>
@@ -434,7 +399,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12433"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_we"
                         mozc:sourceId="12433" />
                 </Flick>
             </KeyState>
@@ -444,7 +408,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12425"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_ra"
                         mozc:sourceId="12425" />
                 </Flick>
             </KeyState>
@@ -461,7 +424,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12379"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_se"
                         mozc:sourceId="12379" />
                 </Flick>
             </KeyState>
@@ -471,7 +433,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12293"
-                        mozc:keyIcon="@raw/jis__keyicon__ideographic_iteration_mark"
                         mozc:sourceId="12293" />
                 </Flick>
             </KeyState>
@@ -481,7 +442,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12443"
-                        mozc:keyIcon="@raw/jis__keyicon__katakana_hiragana_voiced_sound_mark"
                         mozc:sourceId="12443" />
                 </Flick>
             </KeyState>
@@ -498,7 +458,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12444"
-                        mozc:keyIcon="@raw/jis__keyicon__katakana_hiragana_semi_voiced_sound_mark"
                         mozc:sourceId="12444" />
                 </Flick>
             </KeyState>
@@ -508,7 +467,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12300"
-                        mozc:keyIcon="@raw/jis__keyicon__left_corner_bracket"
                         mozc:sourceId="12300" />
                 </Flick>
             </KeyState>
@@ -520,7 +478,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12385"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_ti"
                         mozc:sourceId="12385" />
                 </Flick>
             </KeyState>
@@ -537,7 +494,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12392"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_to"
                         mozc:sourceId="12392" />
                 </Flick>
             </KeyState>
@@ -547,7 +503,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="65291"
-                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_plus_sign"
                         mozc:sourceId="65291" />
                 </Flick>
             </KeyState>
@@ -557,7 +512,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12375"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_si"
                         mozc:sourceId="12375" />
                 </Flick>
             </KeyState>
@@ -567,7 +521,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="65293"
-                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_minus_sign"
                         mozc:sourceId="65293" />
                 </Flick>
             </KeyState>
@@ -577,7 +530,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12399"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_ha"
                         mozc:sourceId="12399" />
                 </Flick>
             </KeyState>
@@ -587,7 +539,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="215"
-                        mozc:keyIcon="@raw/jis__keyicon__multiplication_sign"
                         mozc:sourceId="215" />
                 </Flick>
             </KeyState>
@@ -597,7 +548,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12365"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_ki"
                         mozc:sourceId="12365" />
                 </Flick>
             </KeyState>
@@ -607,7 +557,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="247"
-                        mozc:keyIcon="@raw/jis__keyicon__division_sign"
                         mozc:sourceId="247" />
                 </Flick>
             </KeyState>
@@ -617,7 +566,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12367"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_ku"
                         mozc:sourceId="12367" />
                 </Flick>
             </KeyState>
@@ -627,7 +575,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="65309"
-                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_equals_sign"
                         mozc:sourceId="65309" />
                 </Flick>
             </KeyState>
@@ -637,7 +584,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12414"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_ma"
                         mozc:sourceId="12414" />
                 </Flick>
             </KeyState>
@@ -654,7 +600,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12398"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_no"
                         mozc:sourceId="12398" />
                 </Flick>
             </KeyState>
@@ -664,7 +609,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="65295"
-                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_solidus"
                         mozc:sourceId="65295" />
                 </Flick>
             </KeyState>
@@ -674,7 +618,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12426"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_ri"
                         mozc:sourceId="12426" />
                 </Flick>
             </KeyState>
@@ -684,7 +627,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="65340"
-                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_reverse_solidus"
                         mozc:sourceId="65340" />
                 </Flick>
             </KeyState>
@@ -694,7 +636,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12428"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_re"
                         mozc:sourceId="12428" />
                 </Flick>
             </KeyState>
@@ -704,7 +645,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="65290"
-                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_asterisk"
                         mozc:sourceId="65290" />
                 </Flick>
             </KeyState>
@@ -714,7 +654,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12369"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_ke"
                         mozc:sourceId="12369" />
                 </Flick>
             </KeyState>
@@ -724,7 +663,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12534"
-                        mozc:keyIcon="@raw/jis__keyicon__katakana_letter_small_ke"
                         mozc:sourceId="12534" />
                 </Flick>
             </KeyState>
@@ -734,7 +672,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12416"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_mu"
                         mozc:sourceId="12416" />
                 </Flick>
             </KeyState>
@@ -744,7 +681,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12301"
-                        mozc:keyIcon="@raw/jis__keyicon__right_corner_bracket"
                         mozc:sourceId="12301" />
                 </Flick>
             </KeyState>
@@ -756,7 +692,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12388"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_tu"
                         mozc:sourceId="12388" />
                 </Flick>
             </KeyState>
@@ -766,7 +701,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12387"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_small_tu"
                         mozc:sourceId="12387" />
                 </Flick>
             </KeyState>
@@ -776,7 +710,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12373"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_sa"
                         mozc:sourceId="12373" />
                 </Flick>
             </KeyState>
@@ -793,7 +726,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12381"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_so"
                         mozc:sourceId="12381" />
                 </Flick>
             </KeyState>
@@ -803,7 +735,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="65308"
-                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_less_than_sign"
                         mozc:sourceId="65308" />
                 </Flick>
             </KeyState>
@@ -813,7 +744,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12402"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_hi"
                         mozc:sourceId="12402" />
                 </Flick>
             </KeyState>
@@ -823,7 +753,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="65310"
-                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_greater_than_sign"
                         mozc:sourceId="65310" />
                 </Flick>
             </KeyState>
@@ -833,7 +762,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12371"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_ko"
                         mozc:sourceId="12371" />
                 </Flick>
             </KeyState>
@@ -843,7 +771,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="65288"
-                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_left_parenthesis"
                         mozc:sourceId="65288" />
                 </Flick>
             </KeyState>
@@ -853,7 +780,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12415"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_mi"
                         mozc:sourceId="12415" />
                 </Flick>
             </KeyState>
@@ -863,7 +789,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="65289"
-                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_right_parenthesis"
                         mozc:sourceId="65289" />
                 </Flick>
             </KeyState>
@@ -873,7 +798,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12418"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_mo"
                         mozc:sourceId="12418" />
                 </Flick>
             </KeyState>
@@ -883,7 +807,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="65281"
-                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_exclamation_mark"
                         mozc:sourceId="65281" />
                 </Flick>
             </KeyState>
@@ -893,7 +816,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12397"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_ne"
                         mozc:sourceId="12397" />
                 </Flick>
             </KeyState>
@@ -903,7 +825,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="65311"
-                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_question_mark"
                         mozc:sourceId="65311" />
                 </Flick>
             </KeyState>
@@ -913,7 +834,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12427"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_ru"
                         mozc:sourceId="12427" />
                 </Flick>
             </KeyState>
@@ -923,7 +843,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12289"
-                        mozc:keyIcon="@raw/jis__keyicon__ideographic_comma"
                         mozc:sourceId="12289" />
                 </Flick>
             </KeyState>
@@ -933,7 +852,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12417"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_me"
                         mozc:sourceId="12417" />
                 </Flick>
             </KeyState>
@@ -943,7 +861,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12290"
-                        mozc:keyIcon="@raw/jis__keyicon__ideographic_full_stop"
                         mozc:sourceId="12290" />
                 </Flick>
             </KeyState>
@@ -953,7 +870,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12429"
-                        mozc:keyIcon="@raw/jis__keyicon__hiragana_letter_ro"
                         mozc:sourceId="12429" />
                 </Flick>
             </KeyState>
@@ -963,7 +879,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12539"
-                        mozc:keyIcon="@raw/jis__keyicon__katakana_middle_dot"
                         mozc:sourceId="12539" />
                 </Flick>
             </KeyState>
@@ -973,7 +888,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="12540"
-                        mozc:keyIcon="@raw/jis__keyicon__katakana_hiragana_prolonged_sound_mark"
                         mozc:sourceId="12540" />
                 </Flick>
             </KeyState>
@@ -983,7 +897,6 @@
                 <Flick>
                     <KeyEntity
                         mozc:keyCode="65374"
-                        mozc:keyIcon="@raw/jis__keyicon__fullwidth_tilde"
                         mozc:sourceId="65374" />
                 </Flick>
             </KeyState>
@@ -1069,7 +982,7 @@
                         mozc:iconHeight="@dimen/default_function_icon_height"
                         mozc:iconWidth="@dimen/unlimited"
                         mozc:keyCode="@integer/uchar_space"
-                        mozc:keyIcon="@raw/jis__keyicon__open_box"
+                        mozc:keyIcon="@raw/qwerty__function__space__icon"
                         mozc:longPressKeyCode="@integer/key_ime_picker_dialog"
                         mozc:sourceId="-541" />
                 </Flick>

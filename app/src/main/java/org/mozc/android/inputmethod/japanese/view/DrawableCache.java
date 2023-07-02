@@ -58,6 +58,7 @@ public class DrawableCache {
 
     this.skin = skin;
     cacheMap.clear();
+    // todo:clear cache
   }
 
   /**
@@ -78,6 +79,13 @@ public class DrawableCache {
           skin.getDrawable(resources, resourceId).getConstantState().newDrawable());
       cacheMap.put(key, drawable.get());
     }
+    return drawable;
+  }
+
+  // todo:cache
+  public Optional<Drawable> getDrawable(String keyCharacter) {
+    Optional<Drawable> drawable = Optional.of(
+              skin.getDrawable(resources, keyCharacter).getConstantState().newDrawable());
     return drawable;
   }
 

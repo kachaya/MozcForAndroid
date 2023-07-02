@@ -322,6 +322,11 @@ public class Skin {
     return getDrawableFactory(resources).getDrawable(resourceId).or(DummyDrawable.getInstance());
   }
 
+  public Drawable getDrawable(Resources resources, String keyCharacter) {
+    Preconditions.checkNotNull(resources);
+    return getDrawableFactory(resources).getDrawable(keyCharacter).or(DummyDrawable.getInstance());
+  }
+
   private MozcDrawableFactory getDrawableFactory(Resources resources) {
     if (!drawableFactory.isPresent()) {
       drawableFactory = Optional.of(new MozcDrawableFactory(resources, this));
