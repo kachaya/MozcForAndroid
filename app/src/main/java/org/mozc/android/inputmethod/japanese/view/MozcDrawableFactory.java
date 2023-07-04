@@ -155,9 +155,9 @@ class MozcDrawableFactory {
   }
 
   Optional<Drawable> getDrawable(String keyCharacter) {
-    int width = 48;
-    int height = 64;
-    float textSize = 48.0f;
+    int width = 96;
+    int height = 128;
+    float textSize = 96.0f;
 
     Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     Bitmap bitmap;

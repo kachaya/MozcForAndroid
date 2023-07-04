@@ -62,6 +62,8 @@ public class ClientSidePreference {
     GODAN(3),
     JIS(4),
     STROKE(5),
+    JIS_TABLET(6),
+    QWERTY_TABLET(7),
     ;
 
     // ID for usage stats.

@@ -100,13 +100,17 @@
         <string name="pref_keyboard_layout_description">Switch keyboard layout.</string>
             <string name="pref_keyboard_layout_title_12keys">12 keys</string>
             <string name="pref_keyboard_layout_title_jis">JIS</string>
+            <string name="pref_keyboard_layout_title_jis_tablet">JIS (Tablet)</string>
             <string name="pref_keyboard_layout_title_stroke">STROKE</string>
             <string name="pref_keyboard_layout_title_qwerty">QWERTY</string>
+            <string name="pref_keyboard_layout_title_qwerty_tablet">QWERTY (Tablet)</string>
             <string name="pref_keyboard_layout_title_godan">Godan Keyboard</string>
             <string name="pref_keyboard_layout_description_12keys">Mobile phone layout.</string>
             <string name="pref_keyboard_layout_description_jis">JIS keyboard layout.</string>
+            <string name="pref_keyboard_layout_description_jis_tablet">JIS keyboard tablet layout.</string>
             <string name="pref_keyboard_layout_description_stroke">Stroke keyboard layout.</string>
-            <string name="pref_keyboard_layout_description_qwerty">PC keyboard layout.</string>
+            <string name="pref_keyboard_layout_description_qwerty">QWERTY keyboard layout.</string>
+            <string name="pref_keyboard_layout_description_qwerty_tablet">QWERTY Tablet keyboard layout.</string>
             <string name="pref_keyboard_layout_description_godan">Romaji-dedicated layout. <![CDATA[<a href=\'http://support.google.com/ime/japanese/bin/answer.py?hl=ja&topic=25606&answer=2700298\'>Usage</a>]]></string>
         <string name="pref_input_style_setting_description">Select input style.</string>
         <string name="pref_qwerty_layout_for_alphabet_description">If checked, QWERTY layout will be used for alphabet input mode regardless of main layout.</string>

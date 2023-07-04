@@ -68,6 +68,16 @@ public class Keyboard {
         true,
         CrossingEdgeBehavior.DO_NOTHING),
 
+    JIS_TABLET_KANA(
+        new KeyboardSpecificationName("JIS_TABLET_KANA", 0, 1, 0),
+        R.xml.kbd_jis_tablet_kana,
+        false,
+        CompositionMode.HIRAGANA,
+        SpecialRomanjiTable.DEFAULT_TABLE,
+        SpaceOnAlphanumeric.SPACE_OR_CONVERT_KEEPING_COMPOSITION,
+        true,
+        CrossingEdgeBehavior.DO_NOTHING),
+
     // Stroke keyboard.
     STROKE_KANA(
         new KeyboardSpecificationName("STROKE_KANA", 0, 1, 0),
@@ -181,6 +191,27 @@ public class Keyboard {
         SpaceOnAlphanumeric.COMMIT,
         false,
         CrossingEdgeBehavior.COMMIT_WITHOUT_CONSUMING),
+
+    // QWERTY Tablet keyboard.
+    QWERTY_TABLET_KANA(
+            new KeyboardSpecificationName("QWERT_TABLET_KANA", 0, 1, 0),
+            R.xml.kbd_jis_tablet_romaji,
+            false,
+            CompositionMode.HIRAGANA,
+            SpecialRomanjiTable.QWERTY_MOBILE_TO_HIRAGANA,
+            SpaceOnAlphanumeric.SPACE_OR_CONVERT_KEEPING_COMPOSITION,
+            false,
+            CrossingEdgeBehavior.DO_NOTHING),
+
+    QWERTY_TABLET_ALPHABET(
+            new KeyboardSpecificationName("QWERTY_TABLET_ALPHABET", 0, 1, 0),
+            R.xml.kbd_jis_tablet_abc,
+            false,
+            CompositionMode.HALF_ASCII,
+            SpecialRomanjiTable.QWERTY_MOBILE_TO_HALFWIDTHASCII,
+            SpaceOnAlphanumeric.COMMIT,
+            false,
+            CrossingEdgeBehavior.COMMIT_WITHOUT_CONSUMING),
 
     QWERTY_ALPHABET_NUMBER(
         new KeyboardSpecificationName("QWERTY_ALPHABET_NUMBER", 0, 3, 0),

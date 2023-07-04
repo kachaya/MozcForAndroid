@@ -181,9 +181,11 @@ public class JapaneseSoftwareKeyboardModel {
     if (MozcUtil.isNumberKeyboardPreferred(inputType)) {
       switch (Preconditions.checkNotNull(layout)) {
         case JIS:
+        case JIS_TABLET:
         case STROKE:
         case GODAN:
         case QWERTY:
+        case QWERTY_TABLET:
         case TWELVE_KEYS:
           return Optional.of(KeyboardMode.NUMBER);
       }
@@ -222,6 +224,8 @@ public class JapaneseSoftwareKeyboardModel {
       switch (keyboardLayout) {
         case JIS:
           return getJisKeyboardSpecification(keyboardMode);
+        case JIS_TABLET:
+          return getJisTabletKeyboardSpecification(keyboardMode);
         case STROKE:
           return getStrokeKeyboardSpecification(keyboardMode);
         case TWELVE_KEYS:
@@ -229,6 +233,8 @@ public class JapaneseSoftwareKeyboardModel {
               keyboardMode, inputStyle, qwertyLayoutForAlphabet);
         case QWERTY:
           return getQwertyKeyboardSpecification(keyboardMode);
+        case QWERTY_TABLET:
+          return getQwertyTabletKeyboardSpecification(keyboardMode);
         case GODAN:
           return getGodanKeyboardSpecification(keyboardMode);
       }
@@ -294,6 +300,17 @@ public class JapaneseSoftwareKeyboardModel {
     throw new IllegalArgumentException("Unknown keyboard mode: " + keyboardMode);
   }
 
+  private static KeyboardSpecification getJisTabletKeyboardSpecification(KeyboardMode keyboardMode) {
+    switch (keyboardMode) {
+      case KANA: return KeyboardSpecification.JIS_TABLET_KANA;
+      case ALPHABET: return KeyboardSpecification.QWERTY_TABLET_ALPHABET;
+      case ALPHABET_NUMBER: return KeyboardSpecification.QWERTY_ALPHABET_NUMBER;
+      case NUMBER: return KeyboardSpecification.NUMBER;
+      case SYMBOL_NUMBER: return KeyboardSpecification.SYMBOL_NUMBER;
+    }
+    throw new IllegalArgumentException("Unknown keyboard mode: " + keyboardMode);
+  }
+
   private static KeyboardSpecification getStrokeKeyboardSpecification(KeyboardMode keyboardMode) {
     switch (keyboardMode) {
       case KANA: return KeyboardSpecification.STROKE_KANA;
@@ -309,6 +326,17 @@ public class JapaneseSoftwareKeyboardModel {
     switch (keyboardMode) {
       case KANA: return KeyboardSpecification.QWERTY_KANA;
       case ALPHABET: return KeyboardSpecification.QWERTY_ALPHABET;
+      case ALPHABET_NUMBER: return KeyboardSpecification.QWERTY_ALPHABET_NUMBER;
+      case NUMBER: return KeyboardSpecification.NUMBER;
+      case SYMBOL_NUMBER: return KeyboardSpecification.SYMBOL_NUMBER;
+    }
+    throw new IllegalArgumentException("Unknown keyboard mode: " + keyboardMode);
+  }
+
+  private static KeyboardSpecification getQwertyTabletKeyboardSpecification(KeyboardMode keyboardMode) {
+    switch (keyboardMode) {
+      case KANA: return KeyboardSpecification.QWERTY_TABLET_KANA;
+      case ALPHABET: return KeyboardSpecification.QWERTY_TABLET_ALPHABET;
       case ALPHABET_NUMBER: return KeyboardSpecification.QWERTY_ALPHABET_NUMBER;
       case NUMBER: return KeyboardSpecification.NUMBER;
       case SYMBOL_NUMBER: return KeyboardSpecification.SYMBOL_NUMBER;

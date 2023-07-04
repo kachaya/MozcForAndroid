@@ -198,6 +198,16 @@ public class KeyboardLayoutPreference extends Preference {
           R.string.pref_keyboard_layout_title_stroke,
           R.string.pref_keyboard_layout_description_stroke),
       new Item(
+           KeyboardLayout.JIS_TABLET,
+           KeyboardSpecification.JIS_TABLET_KANA,
+           R.string.pref_keyboard_layout_title_jis_tablet,
+           R.string.pref_keyboard_layout_description_jis_tablet),
+      new Item(
+           KeyboardLayout.QWERTY_TABLET,
+           KeyboardSpecification.QWERTY_TABLET_KANA,
+           R.string.pref_keyboard_layout_title_qwerty_tablet,
+           R.string.pref_keyboard_layout_description_qwerty_tablet),
+      new Item(
           KeyboardLayout.GODAN,
           KeyboardSpecification.GODAN_KANA,
           R.string.pref_keyboard_layout_title_godan,

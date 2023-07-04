@@ -78,7 +78,7 @@ enum PreferencePage {
         }
         result.add(R.xml.pref_about);
         if (isDebug) {
-//          result.add(R.xml.pref_development);
+          result.add(R.xml.pref_development);
         }
         return Collections.unmodifiableList(result);
       case SOFTWARE_KEYBOARD:

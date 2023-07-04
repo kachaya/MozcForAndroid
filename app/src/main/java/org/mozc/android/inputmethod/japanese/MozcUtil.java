@@ -177,11 +177,12 @@ public final class MozcUtil {
   }
 
   public static final boolean isDebug(Context context) {
-    Preconditions.checkNotNull(context);
-    if (isDebug.isPresent()) {
-      return isDebug.get();
-    }
-    return checkApplicationFlag(context, ApplicationInfo.FLAG_DEBUGGABLE);
+    return false;
+//    Preconditions.checkNotNull(context);
+//    if (isDebug.isPresent()) {
+//      return isDebug.get();
+//    }
+//    return checkApplicationFlag(context, ApplicationInfo.FLAG_DEBUGGABLE);
   }
 
   /**
