@@ -51,7 +51,7 @@
     <Row>
         <Spacer
             mozc:keyBackground="transparent"
-            mozc:keyWidth="0.5%p" />
+            mozc:keyWidth="0.6%p" />
         <Key mozc:keyEdgeFlags="left">
             <KeyState mozc:contentDescription="@string/cd_key_uchar_digit_one">
                 <Flick>
@@ -288,7 +288,7 @@
     <Row>
         <Spacer
             mozc:keyBackground="transparent"
-            mozc:keyWidth="0.5%p" />
+            mozc:keyWidth="0.6%p" />
         <Key mozc:keyEdgeFlags="left">
             <KeyState mozc:contentDescription="@string/cd_key_uchar_latin_small_letter_q">
                 <Flick>
@@ -524,7 +524,7 @@
     <Row>
         <Spacer
             mozc:keyBackground="transparent"
-            mozc:keyWidth="0.5%p" />
+            mozc:keyWidth="0.6%p" />
         <Key mozc:keyEdgeFlags="left">
             <KeyState mozc:contentDescription="@string/cd_key_uchar_latin_small_letter_a">
                 <Flick>
@@ -846,7 +846,7 @@
     <Row>
         <Spacer
             mozc:keyBackground="transparent"
-            mozc:keyWidth="0.5%p" />
+            mozc:keyWidth="0.6%p" />
         <Key>
             <KeyState mozc:contentDescription="@string/cd_key_uchar_latin_small_letter_z">
                 <Flick>
@@ -1063,7 +1063,7 @@
     <Row>
         <Spacer
             mozc:keyBackground="transparent"
-            mozc:keyWidth="0.5%p" />
+            mozc:keyWidth="0.6%p" />
         <Key
             mozc:defaultIconHeight="@dimen/default_function_icon_height"
             mozc:defaultIconWidth="@dimen/unlimited"

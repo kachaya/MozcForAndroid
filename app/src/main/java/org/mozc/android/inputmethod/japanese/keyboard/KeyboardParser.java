@@ -65,15 +65,15 @@ public class KeyboardParser {
 
     @VisibleForTesting static class Builder {
 
-      private int width;
-      private int height;
+      private float width;
+      private float height;
       private int horizontalLayoutWeight;
-      private int horizontalGap;
-      private int verticalGap;
-      private int defaultIconWidth;
-      private int defaultIconHeight;
-      private int defaultHorizontalPadding;
-      private int defaultVerticalPadding;
+      private float horizontalGap;
+      private float verticalGap;
+      private float defaultIconWidth;
+      private float defaultIconHeight;
+      private float defaultHorizontalPadding;
+      private float defaultVerticalPadding;
       private DrawableType keyBackgroundDrawableType =
           DrawableType.TWELVEKEYS_REGULAR_KEY_BACKGROUND;
       private int edgeFlags;
@@ -82,11 +82,11 @@ public class KeyboardParser {
       private Stick stick = Stick.EVEN;
       private List<KeyState> keyStateList = Collections.<KeyState>emptyList();
 
-      Builder setWidth(int width) {
+      Builder setWidth(float width) {
         this.width = width;
         return this;
       }
-      Builder setHeight(int height) {
+      Builder setHeight(float height) {
         this.height = height;
         return this;
       }
@@ -94,27 +94,27 @@ public class KeyboardParser {
         this.horizontalLayoutWeight = horizontalLayoutWeight;
         return this;
       }
-      Builder setHorizontalGap(int horizontalGap) {
+      Builder setHorizontalGap(float horizontalGap) {
         this.horizontalGap = horizontalGap;
         return this;
       }
-      Builder setVerticalGap(int verticalGap) {
+      Builder setVerticalGap(float verticalGap) {
         this.verticalGap = verticalGap;
         return this;
       }
-      Builder setDefaultIconWidth(int defaultIconWidth) {
+      Builder setDefaultIconWidth(float defaultIconWidth) {
         this.defaultIconWidth = defaultIconWidth;
         return this;
       }
-      Builder setDefaultIconHeight(int defaultIconHeight) {
+      Builder setDefaultIconHeight(float defaultIconHeight) {
         this.defaultIconHeight = defaultIconHeight;
         return this;
       }
-      Builder setDefaultHorizontalPadding(int defaultHorizontalPadding) {
+      Builder setDefaultHorizontalPadding(float defaultHorizontalPadding) {
         this.defaultHorizontalPadding = defaultHorizontalPadding;
         return this;
       }
-      Builder setDefaultVerticalPadding(int defaultVerticalPadding) {
+      Builder setDefaultVerticalPadding(float defaultVerticalPadding) {
         this.defaultVerticalPadding = defaultVerticalPadding;
         return this;
       }
@@ -147,15 +147,15 @@ public class KeyboardParser {
       }
     }
 
-    final int width;
-    final int height;
+    final float width;
+    final float height;
     final int horizontalLayoutWeight;
-    final int horizontalGap;
-    final int verticalGap;
-    final int defaultIconWidth;
-    final int defaultIconHeight;
-    final int defaultHorizontalPadding;
-    final int defaultVerticalPadding;
+    final float horizontalGap;
+    final float verticalGap;
+    final float defaultIconWidth;
+    final float defaultIconHeight;
+    final float defaultHorizontalPadding;
+    final float defaultVerticalPadding;
     final DrawableType keyBackgroundDrawableType;
     final int edgeFlags;
     final boolean isRepeatable;
@@ -206,7 +206,7 @@ public class KeyboardParser {
     }
 
     Key buildKey(int x, int y, int width) {
-      return new Key(x, y, width, height, horizontalGap, edgeFlags,
+      return new Key(x, y, width, Math.round(height), Math.round(horizontalGap), edgeFlags,
           isRepeatable, isModifier, stick, keyBackgroundDrawableType, keyStateList);
     }
   }
@@ -214,14 +214,14 @@ public class KeyboardParser {
   /** Attributes for the popup dimensions. */
   private static class PopUpAttributes {
 
-    final int popUpHeight;
-    final int popUpXOffset;
-    final int popUpYOffset;
-    final int popUpIconWidth;
-    final int popUpIconHeight;
+    final float popUpHeight;
+    final float popUpXOffset;
+    final float popUpYOffset;
+    final float popUpIconWidth;
+    final float popUpIconHeight;
 
-    PopUpAttributes(int popUpHeight, int popUpXOffset, int popUpYOffset,
-                    int popUpIconWidth, int popUpIconHeight) {
+    PopUpAttributes(float popUpHeight, float popUpXOffset, float popUpYOffset,
+                    float popUpIconWidth, float popUpIconHeight) {
       this.popUpHeight = popUpHeight;
       this.popUpXOffset = popUpXOffset;
       this.popUpYOffset = popUpYOffset;
@@ -440,8 +440,8 @@ public class KeyboardParser {
   /**
    * @return the pixel offsets based on metrics and base
    */
-  @VisibleForTesting static int getDimensionOrFraction(
-      Optional<TypedValue> optionalValue, int base, int defaultValue, DisplayMetrics metrics) {
+  @VisibleForTesting static float getDimensionOrFraction(
+      Optional<TypedValue> optionalValue, float base, float defaultValue, DisplayMetrics metrics) {
     if (!optionalValue.isPresent()) {
       return defaultValue;
     }
@@ -449,24 +449,24 @@ public class KeyboardParser {
 
     switch (value.type) {
       case TypedValue.TYPE_DIMENSION:
-        return TypedValue.complexToDimensionPixelOffset(value.data, metrics);
+        return TypedValue.complexToDimension(value.data, metrics);
       case TypedValue.TYPE_FRACTION:
-        return Math.round(TypedValue.complexToFraction(value.data, base, base));
+        return TypedValue.complexToFraction(value.data, base, base);
     }
 
     throw new IllegalArgumentException("The type dimension or fraction is required." +
                                        "  value = " + value.toString());
   }
 
-  @VisibleForTesting static int getFraction(
-      Optional<TypedValue> optionalValue, int base, int defaultValue) {
+  @VisibleForTesting static float getFraction(
+      Optional<TypedValue> optionalValue, float base, float defaultValue) {
     if (!optionalValue.isPresent()) {
       return defaultValue;
     }
     TypedValue value = optionalValue.get();
 
     if (value.type == TypedValue.TYPE_FRACTION) {
-      return Math.round(TypedValue.complexToFraction(value.data, base, base));
+      return TypedValue.complexToFraction(value.data, base, base);
     }
 
     throw new IllegalArgumentException(
@@ -728,8 +728,8 @@ public class KeyboardParser {
     XmlResourceParser parser = this.xmlResourceParser;
     assertStartTag(parser, "Row");
 
-    int verticalGap;
-    int rowHeight;
+    float verticalGap;
+    float rowHeight;
     int edgeFlags;
     {
       DisplayMetrics metrics = resources.getDisplayMetrics();
@@ -980,10 +980,10 @@ public class KeyboardParser {
     int keyIconResourceId;
     Optional<String> keyCharacter = Optional.absent();
     boolean flickHighlight;
-    int horizontalPadding;
-    int verticalPadding;
-    int iconWidth;
-    int iconHeight;
+    float horizontalPadding;
+    float verticalPadding;
+    float iconWidth;
+    float iconHeight;
     {
       TypedArray attributes = resources.obtainAttributes(parser, KEY_ENTITY_ATTRIBUTES);
       try {
@@ -1037,7 +1037,7 @@ public class KeyboardParser {
 
     return new KeyEntity(sourceId, keyCode, longPressKeyCode, longPressTimeoutTrigger,
         keyIconResourceId, keyCharacter, flickHighlight, popUp,
-        horizontalPadding, verticalPadding, iconWidth, iconHeight);
+        Math.round(horizontalPadding), Math.round(verticalPadding), Math.round(iconWidth), Math.round(iconHeight));
   }
 
   private PopUp parsePopUp(PopUpAttributes defaultValue)
@@ -1065,11 +1065,11 @@ public class KeyboardParser {
 
     return new PopUp(popUpIconResourceId,
                      popUpLongPressIconResourceId,
-                     popUpAttributes.popUpHeight,
-                     popUpAttributes.popUpXOffset,
-                     popUpAttributes.popUpYOffset,
-                     popUpAttributes.popUpIconWidth,
-                     popUpAttributes.popUpIconHeight);
+                     Math.round(popUpAttributes.popUpHeight),
+                     Math.round(popUpAttributes.popUpXOffset),
+                     Math.round(popUpAttributes.popUpYOffset),
+                     Math.round(popUpAttributes.popUpIconWidth),
+                     Math.round(popUpAttributes.popUpIconHeight));
   }
 
   private float parseFlickThreshold(TypedArray attributes, int index) {
@@ -1089,12 +1089,12 @@ public class KeyboardParser {
       int defaultHorizontalPaddingIndex, int defaultVerticalPaddingIndex,
       int keyBackgroundIndex) {
 
-    int keyWidth = (keyWidthIndex >= 0)
+    float keyWidth = (keyWidthIndex >= 0)
         ? getDimensionOrFraction(
               Optional.fromNullable(attributes.peekValue(keyWidthIndex)), keyboardWidth,
               defaultValue.width, metrics)
         : defaultValue.width;
-    int keyHeight = (keyHeightIndex >= 0)
+    float keyHeight = (keyHeightIndex >= 0)
         ? getDimensionOrFraction(
               Optional.fromNullable(attributes.peekValue(keyHeightIndex)), keyboardHeight,
               defaultValue.height, metrics)
@@ -1103,32 +1103,32 @@ public class KeyboardParser {
         ? attributes.getInt(keyHorizontalLayoutWeightIndex, defaultValue.horizontalLayoutWeight)
         : defaultValue.horizontalLayoutWeight;
 
-    int horizontalGap = (horizontalGapIndex >= 0)
+    float horizontalGap = (horizontalGapIndex >= 0)
         ? getDimensionOrFraction(
               Optional.fromNullable(attributes.peekValue(horizontalGapIndex)),
               keyboardWidth, defaultValue.horizontalGap, metrics)
         : defaultValue.horizontalGap;
-    int verticalGap = (verticalGapIndex >= 0)
+    float verticalGap = (verticalGapIndex >= 0)
         ? getDimensionOrFraction(
               Optional.fromNullable(attributes.peekValue(verticalGapIndex)),
               keyboardHeight, defaultValue.verticalGap, metrics)
         : defaultValue.verticalGap;
-    int defaultIconWidth = (defaultIconWidthIndex >= 0)
+    float defaultIconWidth = (defaultIconWidthIndex >= 0)
         ? getDimensionOrFraction(
             Optional.fromNullable(attributes.peekValue(defaultIconWidthIndex)),
             keyboardWidth, defaultValue.defaultIconWidth, metrics)
         : defaultValue.defaultIconWidth;
-    int defaultIconHeight = (defaultIconHeightIndex >= 0)
+    float defaultIconHeight = (defaultIconHeightIndex >= 0)
         ? getDimensionOrFraction(
             Optional.fromNullable(attributes.peekValue(defaultIconHeightIndex)),
             keyboardHeight, defaultValue.defaultIconHeight, metrics)
         : defaultValue.defaultIconHeight;
-    int defaultHorizontalPadding = (defaultHorizontalPaddingIndex >= 0)
+    float defaultHorizontalPadding = (defaultHorizontalPaddingIndex >= 0)
         ? getDimensionOrFraction(
             Optional.fromNullable(attributes.peekValue(defaultHorizontalPaddingIndex)),
             keyboardWidth, defaultValue.defaultHorizontalPadding, metrics)
         : defaultValue.defaultHorizontalPadding;
-    int defaultVerticalPadding = (defaultVerticalPaddingIndex >= 0)
+    float defaultVerticalPadding = (defaultVerticalPaddingIndex >= 0)
         ? getDimensionOrFraction(
             Optional.fromNullable(attributes.peekValue(defaultVerticalPaddingIndex)),
             keyboardWidth, defaultValue.defaultVerticalPadding, metrics)
@@ -1164,27 +1164,27 @@ public class KeyboardParser {
       int keyboardWidth, int popUpHeightIndex,
       int popUpXOffsetIndex, int popUpYOffsetIndex,
       int popUpIconWidthIndex, int popUpIconHeightIndex) {
-    int popUpHeight = (popUpHeightIndex >= 0)
+    float popUpHeight = (popUpHeightIndex >= 0)
         ? getDimensionOrFraction(
             Optional.fromNullable(attributes.peekValue(popUpHeightIndex)), keyboardWidth,
             defaultValue.popUpHeight, metrics)
         : defaultValue.popUpHeight;
-    int popUpXOffset = (popUpXOffsetIndex >= 0)
+    float popUpXOffset = (popUpXOffsetIndex >= 0)
         ? getDimensionOrFraction(
             Optional.fromNullable(attributes.peekValue(popUpXOffsetIndex)), keyboardWidth,
             defaultValue.popUpXOffset, metrics)
         : defaultValue.popUpXOffset;
-    int popUpYOffset = (popUpYOffsetIndex >= 0)
+    float popUpYOffset = (popUpYOffsetIndex >= 0)
         ? getDimensionOrFraction(
             Optional.fromNullable(attributes.peekValue(popUpYOffsetIndex)), keyboardWidth,
             defaultValue.popUpYOffset, metrics)
         : defaultValue.popUpYOffset;
-    int popUpIconWidth = (popUpIconWidthIndex >= 0)
+    float popUpIconWidth = (popUpIconWidthIndex >= 0)
         ? getDimensionOrFraction(
             Optional.fromNullable(attributes.peekValue(popUpIconWidthIndex)), keyboardWidth,
             defaultValue.popUpIconWidth, metrics)
         : defaultValue.popUpIconWidth;
-    int popUpIconHeight = (popUpIconHeightIndex >= 0)
+    float popUpIconHeight = (popUpIconHeightIndex >= 0)
         ? getDimensionOrFraction(
             Optional.fromNullable(attributes.peekValue(popUpIconHeightIndex)), keyboardWidth,
             defaultValue.popUpIconHeight, metrics)
@@ -1219,7 +1219,7 @@ public class KeyboardParser {
     return Flick.Direction.valueOf(attributes.getInt(index, Flick.Direction.CENTER.index));
   }
 
-  private Row buildRow(List<Key> keyList, int height, int verticalGap) {
-    return new Row(keyList, height, verticalGap);
+  private Row buildRow(List<Key> keyList, float height, float verticalGap) {
+    return new Row(keyList, Math.round(height), Math.round(verticalGap));
   }
 }

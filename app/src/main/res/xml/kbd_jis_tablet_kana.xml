@@ -51,7 +51,7 @@
     <Row>
         <Spacer
             mozc:keyBackground="transparent"
-            mozc:keyWidth="0.5%p" />
+            mozc:keyWidth="0.6%p" />
         <Key mozc:keyEdgeFlags="left">
             <KeyState mozc:contentDescription="ぬ">
                 <Flick>
@@ -286,7 +286,7 @@
     <Row>
         <Spacer
             mozc:keyBackground="transparent"
-            mozc:keyWidth="0.5%p" />
+            mozc:keyWidth="0.6%p" />
         <Key mozc:keyEdgeFlags="left">
             <KeyState mozc:contentDescription="た">
                 <Flick>
@@ -514,7 +514,7 @@
     <Row>
         <Spacer
             mozc:keyBackground="transparent"
-            mozc:keyWidth="0.5%p" />
+            mozc:keyWidth="0.6%p" />
         <Key mozc:keyEdgeFlags="left">
             <KeyState mozc:contentDescription="ち">
                 <Flick>
@@ -832,7 +832,7 @@
     <Row>
         <Spacer
             mozc:keyBackground="transparent"
-            mozc:keyWidth="0.5%p" />
+            mozc:keyWidth="0.6%p" />
         <Key>
             <KeyState mozc:contentDescription="つ">
                 <Flick>
@@ -1047,7 +1047,7 @@
     <Row>
         <Spacer
             mozc:keyBackground="transparent"
-            mozc:keyWidth="0.5%p" />
+            mozc:keyWidth="0.6%p" />
         <Key
             mozc:defaultIconHeight="@dimen/default_function_icon_height"
             mozc:defaultIconWidth="@dimen/unlimited"
