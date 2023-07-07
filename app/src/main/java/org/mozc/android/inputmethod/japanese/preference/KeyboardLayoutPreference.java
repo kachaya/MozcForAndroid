@@ -183,35 +183,40 @@ public class KeyboardLayoutPreference extends Preference {
           R.string.pref_keyboard_layout_title_12keys,
           R.string.pref_keyboard_layout_description_12keys),
       new Item(
-          KeyboardLayout.JIS,
-          KeyboardSpecification.JIS_KANA,
-          R.string.pref_keyboard_layout_title_jis,
-          R.string.pref_keyboard_layout_description_jis),
-      new Item(
           KeyboardLayout.QWERTY,
           KeyboardSpecification.QWERTY_KANA,
           R.string.pref_keyboard_layout_title_qwerty,
           R.string.pref_keyboard_layout_description_qwerty),
+      new Item(
+          KeyboardLayout.GODAN,
+          KeyboardSpecification.GODAN_KANA,
+          R.string.pref_keyboard_layout_title_godan,
+          R.string.pref_keyboard_layout_description_godan),
+      new Item(
+          KeyboardLayout.JIS_KANA,
+          KeyboardSpecification.JIS_KANA,
+          R.string.pref_keyboard_layout_title_jis_kana,
+          R.string.pref_keyboard_layout_description_jis_kana),
+      new Item(
+          KeyboardLayout.JIS_ROMAJI,
+          KeyboardSpecification.JIS_ROMAJI,
+          R.string.pref_keyboard_layout_title_jis_romaji,
+          R.string.pref_keyboard_layout_description_jis_romaji),
       new Item(
           KeyboardLayout.STROKE,
           KeyboardSpecification.STROKE_KANA,
           R.string.pref_keyboard_layout_title_stroke,
           R.string.pref_keyboard_layout_description_stroke),
       new Item(
-           KeyboardLayout.JIS_TABLET,
-           KeyboardSpecification.JIS_TABLET_KANA,
-           R.string.pref_keyboard_layout_title_jis_tablet,
-           R.string.pref_keyboard_layout_description_jis_tablet),
+          KeyboardLayout.TABLET_KANA,
+          KeyboardSpecification.TABLET_KANA,
+          R.string.pref_keyboard_layout_title_tablet_kana,
+          R.string.pref_keyboard_layout_description_tablet_kana),
       new Item(
-           KeyboardLayout.QWERTY_TABLET,
-           KeyboardSpecification.QWERTY_TABLET_KANA,
-           R.string.pref_keyboard_layout_title_qwerty_tablet,
-           R.string.pref_keyboard_layout_description_qwerty_tablet),
-      new Item(
-          KeyboardLayout.GODAN,
-          KeyboardSpecification.GODAN_KANA,
-          R.string.pref_keyboard_layout_title_godan,
-          R.string.pref_keyboard_layout_description_godan)));
+          KeyboardLayout.TABLET_ROMAJI,
+          KeyboardSpecification.TABLET_ROMAJI,
+          R.string.pref_keyboard_layout_title_tablet_romaji,
+          R.string.pref_keyboard_layout_description_tablet_romaji)));
 
   private final ImageAdapter imageAdapter = new ImageAdapter(getContext().getResources());
   private final GalleryEventListener galleryEventListener = new GalleryEventListener();

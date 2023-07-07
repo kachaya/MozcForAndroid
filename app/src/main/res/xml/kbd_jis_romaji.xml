@@ -49,6 +49,9 @@
         mozc:rowEdgeFlags="top"
         mozc:verticalGap="0.0%p" />
     <Row>
+        <Spacer
+            mozc:keyBackground="transparent"
+            mozc:keyWidth="0.2%p" />
         <Key mozc:keyEdgeFlags="left">
             <KeyState mozc:contentDescription="@string/cd_key_uchar_digit_one">
                 <Flick>
@@ -223,7 +226,7 @@
                 mozc:contentDescription="dummy"
                 mozc:metaState="shift|capsLock">
                 <Flick>
-                    <KeyEntity mozc:sourceId="-110" />
+                    <KeyEntity mozc:sourceId="-48" />
                 </Flick>
             </KeyState>
         </Key>
@@ -265,6 +268,9 @@
         </Key>
     </Row>
     <Row>
+        <Spacer
+            mozc:keyBackground="transparent"
+            mozc:keyWidth="0.2%p" />
         <Key mozc:keyEdgeFlags="left">
             <KeyState mozc:contentDescription="@string/cd_key_uchar_latin_small_letter_q">
                 <Flick>
@@ -483,6 +489,9 @@
         </Key>
     </Row>
     <Row>
+        <Spacer
+            mozc:keyBackground="transparent"
+            mozc:keyWidth="0.2%p" />
         <Key mozc:keyEdgeFlags="left">
             <KeyState mozc:contentDescription="@string/cd_key_uchar_latin_small_letter_a">
                 <Flick>
@@ -701,6 +710,9 @@
         </Key>
     </Row>
     <Row>
+        <Spacer
+            mozc:keyBackground="transparent"
+            mozc:keyWidth="0.2%p" />
         <Key>
             <KeyState mozc:contentDescription="@string/cd_key_uchar_latin_small_letter_z">
                 <Flick>
@@ -919,13 +931,16 @@
         </Key>
     </Row>
     <Row>
+        <Spacer
+            mozc:keyBackground="transparent"
+            mozc:keyWidth="0.2%p" />
         <Key
             mozc:defaultIconHeight="@dimen/default_function_icon_height"
             mozc:defaultIconWidth="@dimen/unlimited"
             mozc:isModifier="true"
             mozc:keyBackground="qwertyFunction"
             mozc:keyEdgeFlags="left"
-            mozc:keyWidth="12.5%p">
+            mozc:keyWidth="12.45%p">
             <KeyState
                 mozc:contentDescription="@string/cd_key_shift"
                 mozc:nextMetaState="shift">
@@ -933,7 +948,7 @@
                     <KeyEntity
                         mozc:keyCode="@integer/key_capslock"
                         mozc:keyIcon="@raw/qwerty__shift_off"
-                        mozc:sourceId="-511" />
+                        mozc:sourceId="-211" />
                 </Flick>
             </KeyState>
             <KeyState
@@ -945,7 +960,7 @@
                     <KeyEntity
                         mozc:keyCode="@integer/key_capslock"
                         mozc:keyIcon="@raw/qwerty__shift_on"
-                        mozc:sourceId="-512" />
+                        mozc:sourceId="-212" />
                 </Flick>
             </KeyState>
             <KeyState
@@ -956,13 +971,13 @@
                     <KeyEntity
                         mozc:keyCode="@integer/key_capslock"
                         mozc:keyIcon="@raw/qwerty__caps_on"
-                        mozc:sourceId="-513" />
+                        mozc:sourceId="-213" />
                 </Flick>
             </KeyState>
         </Key>
         <Key
             mozc:keyBackground="qwertyFunctionWithThreeDots"
-            mozc:keyWidth="12.5%p">
+            mozc:keyWidth="12.45%p">
             <KeyState mozc:contentDescription="@string/cd_key_chartype_to_abc">
                 <Flick>
                     <KeyEntity
@@ -971,13 +986,13 @@
                         mozc:keyCode="@integer/key_chartype_to_abc"
                         mozc:keyIcon="@raw/qwerty__function__kana__icon"
                         mozc:longPressKeyCode="@integer/key_menu_dialog"
-                        mozc:sourceId="-521" />
+                        mozc:sourceId="-22" />
                 </Flick>
             </KeyState>
         </Key>
         <Key
             mozc:keyBackground="qwertyFunction"
-            mozc:keyWidth="11%p">
+            mozc:keyWidth="12.45%p">
             <KeyState mozc:contentDescription="@string/cd_key_symbol">
                 <Flick>
                     <KeyEntity
@@ -985,13 +1000,13 @@
                         mozc:iconWidth="@dimen/unlimited"
                         mozc:keyCode="@integer/key_symbol"
                         mozc:keyIcon="@raw/qwerty__function__symbol__icon"
-                        mozc:sourceId="-531" />
+                        mozc:sourceId="-19" />
                 </Flick>
             </KeyState>
         </Key>
         <Key
             mozc:keyBackground="qwertyFunctionSpaceWithThreeDots"
-            mozc:keyWidth="17%p">
+            mozc:keyWidth="16.6%p">
             <KeyState mozc:contentDescription="@string/cd_key_uchar_space">
                 <Flick>
                     <KeyEntity
@@ -1000,27 +1015,14 @@
                         mozc:keyCode="@integer/uchar_space"
                         mozc:keyIcon="@raw/qwerty__function__space__icon"
                         mozc:longPressKeyCode="@integer/key_ime_picker_dialog"
-                        mozc:sourceId="-541" />
-                </Flick>
-            </KeyState>
-            <KeyState
-                mozc:contentDescription="@string/cd_key_uchar_space"
-                mozc:metaState="no_globe">
-                <Flick>
-                    <KeyEntity
-                        mozc:iconHeight="@dimen/default_function_icon_height"
-                        mozc:iconWidth="@dimen/unlimited"
-                        mozc:keyCode="@integer/uchar_space"
-                        mozc:keyIcon="@null"
-                        mozc:longPressKeyCode="@integer/key_ime_picker_dialog"
-                        mozc:sourceId="-542" />
+                        mozc:sourceId="-321" />
                 </Flick>
             </KeyState>
         </Key>
         <Key
             mozc:isRepeatable="true"
             mozc:keyBackground="qwertyFunction"
-            mozc:keyWidth="11%p">
+            mozc:keyWidth="10.375%p">
             <KeyState mozc:contentDescription="@string/cd_key_left">
                 <Flick>
                     <KeyEntity
@@ -1028,14 +1030,14 @@
                         mozc:iconWidth="@dimen/unlimited"
                         mozc:keyCode="@integer/key_left"
                         mozc:keyIcon="@raw/qwerty__function__left_arrow__icon"
-                        mozc:sourceId="-551" />
+                        mozc:sourceId="-11" />
                 </Flick>
             </KeyState>
         </Key>
         <Key
             mozc:isRepeatable="true"
             mozc:keyBackground="qwertyFunction"
-            mozc:keyWidth="11%p">
+            mozc:keyWidth="10.375%p">
             <KeyState mozc:contentDescription="@string/cd_key_right">
                 <Flick>
                     <KeyEntity
@@ -1043,7 +1045,7 @@
                         mozc:iconWidth="@dimen/unlimited"
                         mozc:keyCode="@integer/key_right"
                         mozc:keyIcon="@raw/qwerty__function__right_arrow__icon"
-                        mozc:sourceId="-561" />
+                        mozc:sourceId="-12" />
                 </Flick>
             </KeyState>
         </Key>
@@ -1051,7 +1053,7 @@
             mozc:isRepeatable="true"
             mozc:keyBackground="qwertyFunction"
             mozc:keyEdgeFlags="right"
-            mozc:keyWidth="12.5%p">
+            mozc:keyWidth="12.45%p">
             <KeyState mozc:contentDescription="@string/cd_key_uchar_backspace">
                 <Flick>
                     <KeyEntity
@@ -1059,7 +1061,7 @@
                         mozc:iconWidth="@dimen/unlimited"
                         mozc:keyCode="@integer/key_backspace"
                         mozc:keyIcon="@raw/qwerty__function__delete__icon"
-                        mozc:sourceId="-571" />
+                        mozc:sourceId="-8" />
                 </Flick>
             </KeyState>
         </Key>
@@ -1068,7 +1070,7 @@
             mozc:defaultIconWidth="@dimen/keyboard_enter_width"
             mozc:keyBackground="qwertyFunctionWithThreeDots"
             mozc:keyEdgeFlags="right"
-            mozc:keyWidth="12.5%p">
+            mozc:keyWidth="12.45%p">
             <KeyState mozc:contentDescription="@string/cd_key_uchar_linefeed">
                 <Flick>
                     <KeyEntity
@@ -1076,7 +1078,7 @@
                         mozc:keyIcon="@raw/function__enter__icon"
                         mozc:longPressKeyCode="@integer/key_symbol_emoji"
                         mozc:longPressTimeoutTrigger="false"
-                        mozc:sourceId="-581" />
+                        mozc:sourceId="-101" />
                 </Flick>
             </KeyState>
             <KeyState
@@ -1088,7 +1090,7 @@
                         mozc:keyIcon="@raw/function__enter__icon"
                         mozc:longPressKeyCode="@integer/key_symbol_emoji"
                         mozc:longPressTimeoutTrigger="false"
-                        mozc:sourceId="-582" />
+                        mozc:sourceId="-102" />
                 </Flick>
             </KeyState>
             <KeyState
@@ -1100,7 +1102,7 @@
                         mozc:keyIcon="@raw/function__action_done__icon"
                         mozc:longPressKeyCode="@integer/key_symbol_emoji"
                         mozc:longPressTimeoutTrigger="false"
-                        mozc:sourceId="-583" />
+                        mozc:sourceId="-103" />
                 </Flick>
             </KeyState>
             <KeyState
@@ -1112,7 +1114,7 @@
                         mozc:keyIcon="@raw/function__action_go__icon"
                         mozc:longPressKeyCode="@integer/key_symbol_emoji"
                         mozc:longPressTimeoutTrigger="false"
-                        mozc:sourceId="-584" />
+                        mozc:sourceId="-104" />
                 </Flick>
             </KeyState>
             <KeyState
@@ -1124,7 +1126,7 @@
                         mozc:keyIcon="@raw/function__action_next__icon"
                         mozc:longPressKeyCode="@integer/key_symbol_emoji"
                         mozc:longPressTimeoutTrigger="false"
-                        mozc:sourceId="-585" />
+                        mozc:sourceId="-105" />
                 </Flick>
             </KeyState>
             <KeyState
@@ -1136,7 +1138,7 @@
                         mozc:keyIcon="@raw/function__action_previous__icon"
                         mozc:longPressKeyCode="@integer/key_symbol_emoji"
                         mozc:longPressTimeoutTrigger="false"
-                        mozc:sourceId="-586" />
+                        mozc:sourceId="-106" />
                 </Flick>
             </KeyState>
             <KeyState
@@ -1148,7 +1150,7 @@
                         mozc:keyIcon="@raw/function__action_search__icon"
                         mozc:longPressKeyCode="@integer/key_symbol_emoji"
                         mozc:longPressTimeoutTrigger="false"
-                        mozc:sourceId="-587" />
+                        mozc:sourceId="-107" />
                 </Flick>
             </KeyState>
             <KeyState
@@ -1160,10 +1162,9 @@
                         mozc:keyIcon="@raw/function__action_send__icon"
                         mozc:longPressKeyCode="@integer/key_symbol_emoji"
                         mozc:longPressTimeoutTrigger="false"
-                        mozc:sourceId="-589" />
+                        mozc:sourceId="-108" />
                 </Flick>
             </KeyState>
         </Key>
     </Row>
-    <!-- Next sourceId: 151 -->
 </Keyboard>

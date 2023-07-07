@@ -3,6 +3,7 @@ package org.mozc.android.inputmethod.japanese.view;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Rect;
+import android.util.Log;
 
 public class StrokeKeyDrawable extends BaseBackgroundDrawable {
 
@@ -29,25 +30,27 @@ public class StrokeKeyDrawable extends BaseBackgroundDrawable {
         float width = canvasRect.width();
         float height = canvasRect.height();
 
-        Paint paint = this.paint;
-        float r = (canvasRect.height()) * 0.01f;
-
         canvas.drawColor(bgColor);
+
+        Paint paint = this.paint;
         paint.reset();
         paint.setColor(fgColor);
         paint.setAntiAlias(true);
         paint.setStrokeJoin(Paint.Join.ROUND);
-        paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeWidth(1);
 
+        paint.setStyle(Paint.Style.STROKE);
+        float r = height * 0.01f;
         canvas.drawRoundRect(left + r, top + r, right - r, bottom - r, r * 2, r * 2, paint);
         canvas.drawLine(width / 2, top + r, width / 2, bottom - r, paint);
 
         paint.setStyle(Paint.Style.FILL_AND_STROKE);
         paint.setTextSize(height * 0.1f);
-        float ofs = height * 0.05f;
-        canvas.drawText("a", left + ofs, bottom - ofs, paint);
-        canvas.drawText("1", right - (ofs * 2), bottom - ofs, paint);
+        paint.setTextAlign(Paint.Align.CENTER);
+        float ofsX = height * 0.07f;
+        float ofsY = height * 0.08f + ((paint.descent() + paint.ascent()) / 2);
+        canvas.drawText("a", left + ofsX, bottom - ofsY, paint);
+        canvas.drawText("1", right - ofsX, bottom - ofsY, paint);
     }
 
 }

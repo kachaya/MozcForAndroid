@@ -38,7 +38,7 @@
     mozc:keyBackground="qwertyRegular"
     mozc:keyHeight="20.0%p"
     mozc:keyWidth="7.6%p"
-    mozc:keyboardContentDescription="@string/cd_keyboard_kana"
+    mozc:keyboardContentDescription="@string/cd_keyboard_alphabet"
     mozc:popUpHeight="@dimen/key_preview_height"
     mozc:popUpIconHeight="@dimen/key_preview_qwerty_icon_height"
     mozc:popUpXOffset="0dip"
@@ -1105,13 +1105,13 @@
             </KeyState>
         </Key>
         <Key mozc:keyBackground="qwertyFunctionWithThreeDots">
-            <KeyState mozc:contentDescription="@string/cd_key_chartype_to_abc">
+            <KeyState mozc:contentDescription="@string/cd_key_chartype_to_kana">
                 <Flick>
                     <KeyEntity
                         mozc:iconHeight="@dimen/default_function_icon_height"
                         mozc:iconWidth="@dimen/unlimited"
-                        mozc:keyCode="@integer/key_chartype_to_abc"
-                        mozc:keyIcon="@raw/qwerty__function__kana__icon"
+                        mozc:keyCode="@integer/key_chartype_to_kana"
+                        mozc:keyIcon="@raw/qwerty__function__alphabet__icon"
                         mozc:longPressKeyCode="@integer/key_menu_dialog"
                         mozc:sourceId="-521" />
                 </Flick>
@@ -1188,5 +1188,4 @@
             </KeyState>
         </Key>
     </Row>
-    <!-- Next sourceId: 151 -->
 </Keyboard>
