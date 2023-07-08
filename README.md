@@ -1,5 +1,5 @@
-# MozcForAndroid
-タブレット用キーボードを追加。
+# Mozc for Android
+Mozc for Android バージョン 2.23.2815.103-arm64 をベースにしてキーボードを追加しています。
 <p>
 <img src="Screenshot_STROKE.png" width="240px" />
 <img src="Screenshot_JISKANA.png" width="240px" />
