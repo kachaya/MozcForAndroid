@@ -103,7 +103,6 @@
             <string name="pref_keyboard_layout_title_stroke">ストローク</string>
             <string name="pref_keyboard_layout_title_tablet_kana">タブレット(かな)</string>
             <string name="pref_keyboard_layout_title_tablet_romaji">タブレット(ローマ字)</string>
-            <string name="pref_keyboard_layout_title_fifty_keys">50音配列</string>
             <string name="pref_keyboard_layout_description_12keys">携帯電話のキーボードのようなレイアウトです。</string>
             <string name="pref_keyboard_layout_description_qwerty">パソコンのキーボードのようなレイアウトです。</string>
             <string name="pref_keyboard_layout_description_godan">ローマ字入力に特化したレイアウトです。 <![CDATA[<a href=\'http://support.google.com/ime/japanese/bin/answer.py?hl=ja&topic=25606&answer=2700298\'>使い方</a>]]></string>

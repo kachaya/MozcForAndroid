@@ -106,7 +106,6 @@
             <string name="pref_keyboard_layout_title_stroke">STROKE</string>
             <string name="pref_keyboard_layout_title_tablet_kana">Tablet Kana</string>
             <string name="pref_keyboard_layout_title_tablet_romaji">QWERTY (Tablet)</string>
-            <string name="pref_keyboard_layout_title_fifty_keys">50 On</string>
             <string name="pref_keyboard_layout_description_12keys">Mobile phone layout.</string>
             <string name="pref_keyboard_layout_description_qwerty">QWERTY keyboard layout.</string>
             <string name="pref_keyboard_layout_description_godan">Romaji-dedicated layout. <![CDATA[<a href=\'http://support.google.com/ime/japanese/bin/answer.py?hl=ja&topic=25606&answer=2700298\'>Usage</a>]]></string>
