@@ -3,7 +3,10 @@
 <p>
 <img src="Screenshot_STROKE.png" width="240px" />
 <img src="Screenshot_JISKANA.png" width="240px" />
+</p>
+<p>
 <img src="Screenshot_QWERTY.png" width="240px" />
+<img src="Screenshot_50ON.png" width="240px" />
 </p>
 <img src="Screenshot_TABLET.png" width="480px" />
 

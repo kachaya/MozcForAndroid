@@ -216,7 +216,12 @@ public class KeyboardLayoutPreference extends Preference {
           KeyboardLayout.TABLET_ROMAJI,
           KeyboardSpecification.TABLET_ROMAJI,
           R.string.pref_keyboard_layout_title_tablet_romaji,
-          R.string.pref_keyboard_layout_description_tablet_romaji)));
+          R.string.pref_keyboard_layout_description_tablet_romaji),
+      new Item(
+          KeyboardLayout.FIFTY_KEYS,
+          KeyboardSpecification.FIFTY_KEYS_KANA,
+          R.string.pref_keyboard_layout_title_fifty_keys,
+          R.string.pref_keyboard_layout_description_fifty_keys)));
 
   private final ImageAdapter imageAdapter = new ImageAdapter(getContext().getResources());
   private final GalleryEventListener galleryEventListener = new GalleryEventListener();

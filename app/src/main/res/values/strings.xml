@@ -106,6 +106,7 @@
             <string name="pref_keyboard_layout_title_stroke">STROKE</string>
             <string name="pref_keyboard_layout_title_tablet_kana">Tablet Kana</string>
             <string name="pref_keyboard_layout_title_tablet_romaji">QWERTY (Tablet)</string>
+            <string name="pref_keyboard_layout_title_fifty_keys">50 On</string>
             <string name="pref_keyboard_layout_description_12keys">Mobile phone layout.</string>
             <string name="pref_keyboard_layout_description_qwerty">QWERTY keyboard layout.</string>
             <string name="pref_keyboard_layout_description_godan">Romaji-dedicated layout. <![CDATA[<a href=\'http://support.google.com/ime/japanese/bin/answer.py?hl=ja&topic=25606&answer=2700298\'>Usage</a>]]></string>
@@ -114,6 +115,7 @@
             <string name="pref_keyboard_layout_description_stroke">Stroke keyboard layout.</string>
             <string name="pref_keyboard_layout_description_tablet_kana">Tablet Kana keyboard layout.</string>
             <string name="pref_keyboard_layout_description_tablet_romaji">Tablet Romaji keyboard layout.</string>
+            <string name="pref_keyboard_layout_description_fifty_keys">50-On keyboard layout.</string>
         <string name="pref_input_style_setting_description">Select input style.</string>
         <string name="pref_qwerty_layout_for_alphabet_description">If checked, QWERTY layout will be used for alphabet input mode regardless of main layout.</string>
         <string name="pref_fullscreen_description">If checked, target textbox shows in fullscreen mode.</string>

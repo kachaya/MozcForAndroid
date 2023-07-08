@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress ALL -->
+<Keyboard xmlns:mozc="http://schemas.android.com/apk/res-auto"
+    mozc:defaultHorizontalPadding="@fraction/keyboard_qwerty_default_horizontal_padding"
+    mozc:defaultIconHeight="@dimen/keyboard_qwerty_default_height"
+    mozc:defaultIconWidth="@dimen/unlimited"
+    mozc:defaultVerticalPadding="@fraction/keyboard_qwerty_default_vertical_padding"
+    mozc:horizontalGap="0.0%p"
+    mozc:keyBackground="qwertyRegular"
+    mozc:keyHeight="16.6%p"
+    mozc:keyWidth="10.0%p"
+    mozc:keyboardContentDescription="@string/cd_keyboard_alphabet"
+    mozc:popUpHeight="@dimen/key_preview_height"
+    mozc:popUpIconHeight="@dimen/key_preview_qwerty_icon_height"
+    mozc:popUpXOffset="0dip"
+    mozc:popUpYOffset="@dimen/mini_keyboard_vertical_correction"
+    mozc:verticalGap="0.0%p">
+    <Row
+        mozc:keyHeight="0dip"
+        mozc:rowEdgeFlags="top"
+        mozc:verticalGap="0.0%p" />
+    <Row>
+        <Key>
+            <KeyState mozc:contentDescription="わ">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12431"
+                        mozc:sourceId="12431" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="ら">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12425"
+                        mozc:sourceId="12425" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="や">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12420"
+                        mozc:sourceId="12420" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="ま">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12414"
+                        mozc:sourceId="12414" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="は">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12399"
+                        mozc:sourceId="12399" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="な">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12394"
+                        mozc:sourceId="12394" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="た">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12383"
+                        mozc:sourceId="12383" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="さ">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12373"
+                        mozc:sourceId="12373" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="か">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12363"
+                        mozc:sourceId="12363" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="あ">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12354"
+                        mozc:sourceId="12354" />
+                </Flick>
+            </KeyState>
+        </Key>
+    </Row>
+    <Row>
+        <Key>
+            <KeyState mozc:contentDescription="を">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12434"
+                        mozc:sourceId="12434" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="り">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12426"
+                        mozc:sourceId="12426" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="ゆ">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12422"
+                        mozc:sourceId="12422" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="み">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12415"
+                        mozc:sourceId="12415" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="ひ">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12402"
+                        mozc:sourceId="12402" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="に">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12395"
+                        mozc:sourceId="12395" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="ち">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12385"
+                        mozc:sourceId="12385" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="し">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12375"
+                        mozc:sourceId="12375" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="き">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12365"
+                        mozc:sourceId="12365" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="い">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12356"
+                        mozc:sourceId="12356" />
+                </Flick>
+            </KeyState>
+        </Key>
+    </Row>
+    <Row>
+        <Key>
+            <KeyState mozc:contentDescription="ん">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12435"
+                        mozc:sourceId="12435" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="る">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12427"
+                        mozc:sourceId="12427" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="よ">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12424"
+                        mozc:sourceId="12424" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="む">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12416"
+                        mozc:sourceId="12416" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="ふ">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12405"
+                        mozc:sourceId="12405" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="ぬ">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12396"
+                        mozc:sourceId="12396" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="つ">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12388"
+                        mozc:sourceId="12388" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="す">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12377"
+                        mozc:sourceId="12377" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="く">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12367"
+                        mozc:sourceId="12367" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="う">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12358"
+                        mozc:sourceId="12358" />
+                </Flick>
+            </KeyState>
+        </Key>
+    </Row>
+    <Row>
+        <Key>
+            <KeyState mozc:contentDescription="ー">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12540"
+                        mozc:sourceId="12540" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="れ">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12428"
+                        mozc:sourceId="12428" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="、">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12289"
+                        mozc:sourceId="12289" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="め">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12417"
+                        mozc:sourceId="12417" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="へ">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12408"
+                        mozc:sourceId="12408" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="ね">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12397"
+                        mozc:sourceId="12397" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="て">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12390"
+                        mozc:sourceId="12390" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="せ">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12379"
+                        mozc:sourceId="12379" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="け">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12369"
+                        mozc:sourceId="12369" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="え">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12360"
+                        mozc:sourceId="12360" />
+                </Flick>
+            </KeyState>
+        </Key>
+    </Row>
+    <Row>
+        <Key>
+            <KeyState mozc:contentDescription="@string/cd_key_kana_modifier">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="@integer/uchar_asterisk"
+                        mozc:keyIcon="@raw/fiftykeys__kana__modifier"
+                        mozc:sourceId="17"></KeyEntity>
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="ろ">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12429"
+                        mozc:sourceId="12429" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="。">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12290"
+                        mozc:sourceId="12290" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="も">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12418"
+                        mozc:sourceId="12418" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="ほ">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12411"
+                        mozc:sourceId="12411" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="の">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12398"
+                        mozc:sourceId="12398" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="と">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12392"
+                        mozc:sourceId="12392" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="そ">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12381"
+                        mozc:sourceId="12381" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="こ">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12371"
+                        mozc:sourceId="12371" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key>
+            <KeyState mozc:contentDescription="お">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="12362"
+                        mozc:sourceId="12362" />
+                </Flick>
+            </KeyState>
+        </Key>
+    </Row>
+    <Row mozc:keyHeight="17.0%p">
+        <Key
+            mozc:keyBackground="qwertyFunctionWithThreeDots"
+            mozc:keyWidth="12.5%p">
+            <KeyState mozc:contentDescription="@string/cd_key_chartype_to_abc">
+                <Flick>
+                    <KeyEntity
+                        mozc:iconHeight="@dimen/default_function_icon_height"
+                        mozc:iconWidth="@dimen/unlimited"
+                        mozc:keyCode="@integer/key_chartype_to_abc"
+                        mozc:keyIcon="@raw/qwerty__function__kana__icon"
+                        mozc:longPressKeyCode="@integer/key_menu_dialog"
+                        mozc:sourceId="-22" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key
+            mozc:keyBackground="qwertyFunction"
+            mozc:keyWidth="12.5%p">
+            <KeyState mozc:contentDescription="@string/cd_key_symbol">
+                <Flick>
+                    <KeyEntity
+                        mozc:iconHeight="@dimen/default_function_icon_height"
+                        mozc:iconWidth="@dimen/unlimited"
+                        mozc:keyCode="@integer/key_symbol"
+                        mozc:keyIcon="@raw/qwerty__function__symbol__icon"
+                        mozc:sourceId="-19" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key
+            mozc:keyBackground="qwertyFunctionSpaceWithThreeDots"
+            mozc:keyWidth="25.0%p">
+            <KeyState mozc:contentDescription="@string/cd_key_uchar_space">
+                <Flick>
+                    <KeyEntity
+                        mozc:iconHeight="@dimen/default_function_icon_height"
+                        mozc:iconWidth="@dimen/unlimited"
+                        mozc:keyCode="@integer/uchar_space"
+                        mozc:keyIcon="@raw/qwerty__function__space__icon"
+                        mozc:longPressKeyCode="@integer/key_ime_picker_dialog"
+                        mozc:sourceId="-32" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key
+            mozc:isRepeatable="true"
+            mozc:keyBackground="qwertyFunction"
+            mozc:keyWidth="12.5%p">
+            <KeyState mozc:contentDescription="@string/cd_key_left">
+                <Flick>
+                    <KeyEntity
+                        mozc:iconHeight="@dimen/default_function_icon_height"
+                        mozc:iconWidth="@dimen/unlimited"
+                        mozc:keyCode="@integer/key_left"
+                        mozc:keyIcon="@raw/qwerty__function__left_arrow__icon"
+                        mozc:sourceId="-11" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key
+            mozc:isRepeatable="true"
+            mozc:keyBackground="qwertyFunction"
+            mozc:keyWidth="12.5%p">
+            <KeyState mozc:contentDescription="@string/cd_key_right">
+                <Flick>
+                    <KeyEntity
+                        mozc:iconHeight="@dimen/default_function_icon_height"
+                        mozc:iconWidth="@dimen/unlimited"
+                        mozc:keyCode="@integer/key_right"
+                        mozc:keyIcon="@raw/qwerty__function__right_arrow__icon"
+                        mozc:sourceId="-12" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key
+            mozc:isRepeatable="true"
+            mozc:keyBackground="qwertyFunction"
+            mozc:keyWidth="12.5%p">
+            <KeyState mozc:contentDescription="@string/cd_key_uchar_backspace">
+                <Flick>
+                    <KeyEntity
+                        mozc:iconHeight="@dimen/default_function_icon_height"
+                        mozc:iconWidth="@dimen/unlimited"
+                        mozc:keyCode="@integer/key_backspace"
+                        mozc:keyIcon="@raw/qwerty__function__delete__icon"
+                        mozc:sourceId="-8" />
+                </Flick>
+            </KeyState>
+        </Key>
+        <Key
+            mozc:defaultIconHeight="@dimen/unlimited"
+            mozc:defaultIconWidth="@dimen/keyboard_enter_width"
+            mozc:keyBackground="qwertyFunctionWithThreeDots"
+            mozc:keyWidth="12.5%p">
+            <KeyState mozc:contentDescription="@string/cd_key_uchar_linefeed">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="@integer/uchar_linefeed"
+                        mozc:keyIcon="@raw/function__enter__icon"
+                        mozc:longPressKeyCode="@integer/key_symbol_emoji"
+                        mozc:longPressTimeoutTrigger="false"
+                        mozc:sourceId="-101" />
+                </Flick>
+            </KeyState>
+            <KeyState
+                mozc:contentDescription="@string/cd_key_composing_done"
+                mozc:metaState="composing">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="@integer/uchar_linefeed"
+                        mozc:keyIcon="@raw/function__enter__icon"
+                        mozc:longPressKeyCode="@integer/key_symbol_emoji"
+                        mozc:longPressTimeoutTrigger="false"
+                        mozc:sourceId="-102" />
+                </Flick>
+            </KeyState>
+            <KeyState
+                mozc:contentDescription="@string/cd_key_action_done"
+                mozc:metaState="action_done">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="@integer/uchar_linefeed"
+                        mozc:keyIcon="@raw/function__action_done__icon"
+                        mozc:longPressKeyCode="@integer/key_symbol_emoji"
+                        mozc:longPressTimeoutTrigger="false"
+                        mozc:sourceId="-103" />
+                </Flick>
+            </KeyState>
+            <KeyState
+                mozc:contentDescription="@string/cd_key_action_go"
+                mozc:metaState="action_go">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="@integer/uchar_linefeed"
+                        mozc:keyIcon="@raw/function__action_go__icon"
+                        mozc:longPressKeyCode="@integer/key_symbol_emoji"
+                        mozc:longPressTimeoutTrigger="false"
+                        mozc:sourceId="-104" />
+                </Flick>
+            </KeyState>
+            <KeyState
+                mozc:contentDescription="@string/cd_key_action_next"
+                mozc:metaState="action_next">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="@integer/uchar_linefeed"
+                        mozc:keyIcon="@raw/function__action_next__icon"
+                        mozc:longPressKeyCode="@integer/key_symbol_emoji"
+                        mozc:longPressTimeoutTrigger="false"
+                        mozc:sourceId="-105" />
+                </Flick>
+            </KeyState>
+            <KeyState
+                mozc:contentDescription="@string/cd_key_action_previous"
+                mozc:metaState="action_previous">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="@integer/uchar_linefeed"
+                        mozc:keyIcon="@raw/function__action_previous__icon"
+                        mozc:longPressKeyCode="@integer/key_symbol_emoji"
+                        mozc:longPressTimeoutTrigger="false"
+                        mozc:sourceId="-106" />
+                </Flick>
+            </KeyState>
+            <KeyState
+                mozc:contentDescription="@string/cd_key_action_search"
+                mozc:metaState="action_search">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="@integer/uchar_linefeed"
+                        mozc:keyIcon="@raw/function__action_search__icon"
+                        mozc:longPressKeyCode="@integer/key_symbol_emoji"
+                        mozc:longPressTimeoutTrigger="false"
+                        mozc:sourceId="-107" />
+                </Flick>
+            </KeyState>
+            <KeyState
+                mozc:contentDescription="@string/cd_key_action_send"
+                mozc:metaState="action_send">
+                <Flick>
+                    <KeyEntity
+                        mozc:keyCode="@integer/uchar_linefeed"
+                        mozc:keyIcon="@raw/function__action_send__icon"
+                        mozc:longPressKeyCode="@integer/key_symbol_emoji"
+                        mozc:longPressTimeoutTrigger="false"
+                        mozc:sourceId="-109" />
+                </Flick>
+            </KeyState>
+        </Key>
+    </Row>
+</Keyboard>

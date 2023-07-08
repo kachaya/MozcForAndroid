@@ -255,6 +255,27 @@ public class Keyboard {
             false,
             CrossingEdgeBehavior.COMMIT_WITHOUT_CONSUMING),
 
+    // 50-on keyboard.
+    FIFTY_KEYS_KANA(
+            new KeyboardSpecificationName("FIFTY_KEYS_KANA", 0, 1, 0),
+            R.xml.kbd_fifty_keys_kana,
+            false,
+            CompositionMode.HIRAGANA,
+            SpecialRomanjiTable.TWELVE_KEYS_TO_HIRAGANA,
+            SpaceOnAlphanumeric.SPACE_OR_CONVERT_KEEPING_COMPOSITION,
+            true,
+            CrossingEdgeBehavior.DO_NOTHING),
+
+    FIFTY_KEYS_ALPHABET(
+            new KeyboardSpecificationName("FIFTY_KEYS_ALPHABET", 0, 1, 0),
+            R.xml.kbd_fifty_keys_abc,
+            false,
+            CompositionMode.HALF_ASCII,
+            SpecialRomanjiTable.QWERTY_MOBILE_TO_HALFWIDTHASCII,
+            SpaceOnAlphanumeric.SPACE_OR_CONVERT_KEEPING_COMPOSITION,
+            true,
+            CrossingEdgeBehavior.DO_NOTHING),
+
     NUMBER(
         new KeyboardSpecificationName("NUMBER", 0, 1, 0),
         R.xml.kbd_123,

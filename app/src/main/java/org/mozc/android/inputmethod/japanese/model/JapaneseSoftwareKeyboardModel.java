@@ -188,6 +188,7 @@ public class JapaneseSoftwareKeyboardModel {
         case STROKE:
         case TABLET_KANA:
         case TABLET_ROMAJI:
+        case FIFTY_KEYS:
           return Optional.of(KeyboardMode.NUMBER);
       }
     }
@@ -240,6 +241,8 @@ public class JapaneseSoftwareKeyboardModel {
           return getTabletKanaKeyboardSpecification(keyboardMode);
         case TABLET_ROMAJI:
           return getTabletRomajiKeyboardSpecification(keyboardMode);
+        case FIFTY_KEYS:
+          return getFiftyKeysKeyboardSpecification(keyboardMode);
       }
     } catch (IllegalArgumentException e) {
       MozcLog.w("Unknown keyboard specification: ", e);
@@ -362,6 +365,17 @@ public class JapaneseSoftwareKeyboardModel {
     switch (keyboardMode) {
       case KANA: return KeyboardSpecification.TABLET_ROMAJI;
       case ALPHABET: return KeyboardSpecification.TABLET_ALPHABET;
+      case ALPHABET_NUMBER: return KeyboardSpecification.QWERTY_ALPHABET_NUMBER;
+      case NUMBER: return KeyboardSpecification.NUMBER;
+      case SYMBOL_NUMBER: return KeyboardSpecification.SYMBOL_NUMBER;
+    }
+    throw new IllegalArgumentException("Unknown keyboard mode: " + keyboardMode);
+  }
+
+  private static KeyboardSpecification getFiftyKeysKeyboardSpecification(KeyboardMode keyboardMode) {
+    switch (keyboardMode) {
+      case KANA: return KeyboardSpecification.FIFTY_KEYS_KANA;
+      case ALPHABET: return KeyboardSpecification.FIFTY_KEYS_ALPHABET;
       case ALPHABET_NUMBER: return KeyboardSpecification.QWERTY_ALPHABET_NUMBER;
       case NUMBER: return KeyboardSpecification.NUMBER;
       case SYMBOL_NUMBER: return KeyboardSpecification.SYMBOL_NUMBER;

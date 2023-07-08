@@ -65,6 +65,7 @@ public class ClientSidePreference {
     STROKE(6),
     TABLET_KANA(7),
     TABLET_ROMAJI(8),
+    FIFTY_KEYS(9),
     ;
 
     // ID for usage stats.
