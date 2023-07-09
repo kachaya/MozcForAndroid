@@ -718,12 +718,12 @@
                 </Flick>
             </KeyState>
             <KeyState
-                mozc:contentDescription="@string/cd_key_uchar_greater_than_sign"
+                mozc:contentDescription="@string/cd_key_uchar_less_than_sign"
                 mozc:metaState="alt">
                 <Flick>
                     <KeyEntity
-                        mozc:keyCode="@integer/uchar_greater_than_sign"
-                        mozc:sourceId="62" />
+                        mozc:keyCode="@integer/uchar_less_than_sign"
+                        mozc:sourceId="60" />
                 </Flick>
             </KeyState>
         </Key>
@@ -736,12 +736,12 @@
                 </Flick>
             </KeyState>
             <KeyState
-                mozc:contentDescription="@string/cd_key_uchar_less_than_sign"
+                mozc:contentDescription="@string/cd_key_uchar_greater_than_sign"
                 mozc:metaState="alt">
                 <Flick>
                     <KeyEntity
-                        mozc:keyCode="@integer/uchar_less_than_sign"
-                        mozc:sourceId="60" />
+                        mozc:keyCode="@integer/uchar_greater_than_sign"
+                        mozc:sourceId="62" />
                 </Flick>
             </KeyState>
         </Key>
