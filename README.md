@@ -1,5 +1,10 @@
 # Mozc for Android
 Mozc for Android バージョン 2.23.2815.103-arm64 をベースにしてキーボードを追加しています。
+
+辞書の再構成やpicファイルの追加に関しては
+[Mozc for Android用mozcのWiki](https://github.com/kachaya/mozc/wiki)
+を参照してください。
+
 <p>
 <img src="Screenshot_STROKE.png" width="240px" />
 <img src="Screenshot_JISKANA.png" width="240px" />
